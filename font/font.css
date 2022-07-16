@@ -1,0 +1,91 @@
+
+@font-face {
+    font-family: 'JSDongkang-Regular';
+    src: url('/portfolio/font/JSDongkang-Regular.ttf') format('truetype');
+}
+
+.JSDongkang-Regular {
+    font-family: 'JSDongkang-Regular';
+}
+
+
+@font-face {
+    font-family: 'payboocBold';
+    src: url('/portfolio/font/payboocBold.ttf') format('truetype');
+}
+
+.payboocBold {
+    font-family: 'payboocBold';
+}
+
+@font-face {
+    font-family: 'payboocExtraBold';
+    src: url('/portfolio/font/payboocExtraBold.ttf') format('truetype');
+}
+
+.payboocExtraBold {
+    font-family: 'payboocExtraBold';
+}
+
+@font-face {
+    font-family: 'payboocLight';
+    src: url('/portfolio/font/payboocLight.ttf') format('truetype');
+}
+
+.payboocLight {
+    font-family: 'payboocLight';
+}
+
+@font-face {
+    font-family: 'payboocMedium';
+    src: url('/portfolio/font/payboocMedium.ttf') format('truetype');
+}
+
+.payboocMedium {
+    font-family: 'payboocMedium';
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('/portfolio/font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
+.SpoqaHanSansNeo-Regular {
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    src: url('/portfolio/font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+
+.SpoqaHanSansNeo-Medium {
+    font-family: 'SpoqaHanSansNeo-Medium';
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    src: url('/portfolio/font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+
+.SpoqaHanSansNeo-Bold {
+    font-family: 'SpoqaHanSansNeo-Bold';
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url('/portfolio/font/SpoqaHanSansNeo-Light.ttf') format('truetype');
+}
+
+.SpoqaHanSansNeo-Light {
+    font-family: 'SpoqaHanSansNeo-Light';
+}
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Thin';
+    src: url('/portfolio/font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}
+
+.SpoqaHanSansNeo-Thin {
+    font-family: 'SpoqaHanSansNeo-Thin';
+}
