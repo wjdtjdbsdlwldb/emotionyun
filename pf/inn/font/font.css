@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: 'Eng';
+    src: url('/pf/inn/font/Eng.ttf') format('truetype');
+}
+
+.Eng {
+    font-family: 'Eng';
+}
+
+
+@font-face {
+    font-family: 'EngB';
+    src: url('/pf/inn/font/EngB.ttf') format('truetype');
+}
+
+.EngB {
+    font-family: 'EngB';
+}
+
+@font-face {
+    font-family: 'EngBI';
+    src: url('/pf/inn/font/EngBI.ttf') format('truetype');
+}
+
+.EngBI {
+    font-family: 'EngBI';
+}
+
+@font-face {
+    font-family: 'EngMI';
+    src: url('/pf/inn/font/EngMI.ttf') format('truetype');
+}
+
+.EngMI {
+    font-family: 'EngMI';
+}
+
+
+@font-face {
+    font-family: 'mtoco';
+    src: url('/pf/inn/font/mtoco.ttf') format('truetype');
+}
+
+.mtoco {
+    font-family: 'mtoco';
+}
+
+@font-face {
+    font-family: 'MonotypeCorsiva';
+    src: url('/pf/inn/font/MonotypeCorsiva.ttf') format('truetype');
+}
+
+.MonotypeCorsiva {
+    font-family: 'MonotypeCorsiva';
+}
+
+@font-face {
+    font-family: 'Ammys';
+    src: url('/pf/inn/font/Ammys.ttf') format('truetype');
+}
+
+.Ammys {
+    font-family: 'Ammys';
+}
+
+@font-face {
+    font-family: 'Flow';
+    src: url('/pf/inn/font/Flow.otf') format('opentype');
+}
+
+.Flow {
+    font-family: 'Flow';
+}
+
+@font-face {
+    font-family: 'Blokletters-Balpen';
+    src: url('/pf/inn/font/Blokletters-Balpen.ttf') format('truetype');
+}
+
+.Blokletters-Balpen {
+    font-family: 'Blokletters-Balpen';
+}
+
+@font-face {
+    font-family: 'Postit-Penscript';
+    src: url('/pf/inn/font/Postit-Penscript.otf') format('opentype');
+}
+
+.Postit-Penscript {
+    font-family: 'Postit-Penscript';
+}
+
+@font-face {
+    font-family: 'AgnesaKyoto';
+    src: url('/pf/inn/font/AgnesaKyoto.ttf') format('truetype');
+}
+
+.AgnesaKyoto {
+    font-family: 'AgnesaKyoto';
+}

@@ -1,0 +1,18 @@
+/* @font-face {
+    font-family: 'malgun';
+    src: url('/pf/si/font/malgun.ttf') format('truetype');
+}
+
+.malgun {
+    font-family: 'malgun';
+} */
+
+
+@font-face {
+    font-family: MalgunGothic;
+    src: url(font/MalgunGothic.eot);
+}
+
+.malgun {
+    font-family: 'Malgun Gothic' !important;
+}

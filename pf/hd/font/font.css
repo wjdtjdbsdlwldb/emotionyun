@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'TitleM';
+    src: url('/pf/hd/font/TitleM.otf') format('opentype');
+}
+
+.titleM {
+    font-family: 'titleM';
+}
+
+@font-face {
+    font-family: 'TitleL';
+    src: url('/pf/hd/font/TitleL.otf') format('opentype');
+}
+
+.titleL {
+    font-family: 'titleL';
+}
+
+
+@font-face {
+    font-family: 'NSR';
+    src: url('/pf/hd/font/NSR.ttf') format('truetype');
+}
+
+.NSR {
+    font-family: 'NSR';
+}
+
+@font-face {
+    font-family: 'NSL';
+    src: url('/pf/hd/font/NSL.ttf') format('truetype');
+}
+
+.NSL {
+    font-family: 'NSL';
+}
+
+@font-face {
+    font-family: 'NSEB';
+    src: url('/pf/hd/font/NSEB.ttf') format('truetype');
+}
+
+.NSEB {
+    font-family: 'NSEB';
+}
+
+@font-face {
+    font-family: 'NSB';
+    src: url('/pf/hd/font/NSB.ttf') format('truetype');
+}
+
+.NSB {
+    font-family: 'NSB';
+}
+
+@font-face {
+    font-family: 'NSacR';
+    src: url('/pf/hd/font/NSacR.ttf') format('truetype');
+}
+
+.NSacR {
+    font-family: 'NSacR';
+}
+
+@font-face {
+    font-family: 'NSacL';
+    src: url('/pf/hd/font/NSacL.ttf') format('truetype');
+}
+
+.NSacL {
+    font-family: 'NSacL';
+}
+
+@font-face {
+    font-family: 'NSacEB';
+    src: url('/pf/hd/font/NSacEB.ttf') format('truetype');
+}
+
+.NSacEB {
+    font-family: 'NSacEB';
+}
+
+@font-face {
+    font-family: 'NSacB';
+    src: url('/pf/hd/font/NSacB.ttf') format('truetype');
+}
+
+.NSacB {
+    font-family: 'NSacB';
+}
