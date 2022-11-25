@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://use.typekit.net/yap0qpj.css");
+
 html {
-    font-family: 'Noto Sans KR','nanumsquare', 'JSDongkang-Regular', 'payboocBold', 'payboocExtraBold', 'payboocLight', 'payboocMedium', sans-serif;
+    font-family: 'Noto Sans KR','nanumsquare', 'JSDongkang-Regular', 'payboocBold', 'payboocExtraBold', 'payboocLight', 'payboocMedium', 'raleway', sans-serif;
 }
 
 body,
@@ -338,7 +340,8 @@ body::-webkit-scrollbar-track {
 
 /* 실질적 스크롤 바 */
 body::-webkit-scrollbar-thumb {
-    background: #605252;
+    background: #887a7a;
+    border-radius: 10px;
 }
 
 /* 실질적 스크롤 바 위에 마우스를 올려다 둘 때 */
@@ -477,6 +480,9 @@ body::-webkit-scrollbar-button {
         opacity: 1;
     }
 }
+/* 221124 회사작업물 추가 작업 메인 텍스트 수정 */
+.main>.main-wrap>.page-1 .left-txt>.mul-des span{display: inline-block; font-size: 40px;}
+
 
 .main>.main-wrap>.page-1 .left-txt>.intro {
     font-size: 15px;
@@ -1169,10 +1175,10 @@ body::-webkit-scrollbar-button {
     color: ivory;
 }
 
-
+/* 
 .carousel-2>.owl-carousel .item .mockup>.mk-btn>a.des-btn {
     margin-right: 28px;
-}
+} */
 
 /* 3페이지 - 어바웃미 */
 
@@ -1395,6 +1401,28 @@ body::-webkit-scrollbar-button {
     display: inline-block;
     margin: 20px 35px 0 0;
 }
+
+/* 221119 회사작업물 추가 페이지 */
+
+.page-4 .pg4-wrap{padding: 0 50px;}
+.page-4 .work_tit {text-align: center; color: #605252;}
+.page-4 .work_tit h2{padding-top: 55px; font-size: 45px; font-family: 'JSDongkangRegular'; font-weight: 600;}
+.page-4 .work_tit p {letter-spacing: -1px; margin-top: 5px;}
+.page-4 .work_body{padding:90px 0 50px 0;}
+.page-4 .work_body ul li {border-top: 1px solid #605252; padding: 35px 0;}
+.page-4 .work_body ul li::after{ content: "";display: block;clear: both;}
+/* 작업물 사이트 이름,설명 */
+.page-4 .work_body ul li a{display: inline-block; float: left; overflow: hidden;}
+.page-4 .work_body ul li a.site_txt{width: 30%; color: #605252;}
+.page-4 .work_body ul li a span{display:block; letter-spacing: -0.5px;}
+.page-4 .work_body ul li a.site_txt .s01 {font-size: 18px;}
+.page-4 .work_body ul li a.site_txt .s02 {font-size: 35px;font-family: 'payboocBold'; font-weight: bold; line-height: 50px;}
+.page-4 .work_body ul li a.site_txt .s04 {margin-top: 45px; font-size: 15px; font-weight: 500; line-height: 22px;}
+/* 작업물 사이트 이미지 */
+.page-4 .work_body ul li a.site_image{width: 70%; float: right; box-sizing: border-box; text-align: right; position: relative;}
+.page-4 .work_body ul li a.site_image span{display: inline-block; position: absolute;top: 25%;left: 48%; text-align: left; font-size: 26px; letter-spacing: -1px;  font-family: 'JSDongkang-Regular'; color: #535353; font-style: italic;} 
+.page-4 .work_body ul li a img{display: inline-block; width: 350px;height: 200px; box-sizing: border-box;}
+.page-4 .work_body ul li a:hover img{box-shadow: 2px 1px 5px #c5b3b3;}
 
 
 /* 푸터  */

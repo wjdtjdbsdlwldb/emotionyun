@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지검색&nbsp;|&nbsp;중달이</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="js/jquery.sliderPro.core.js"></script>
+  <script src="js/common.js"></script>
+  <!-- Link Swiper's CSS -->
+  <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/image-search.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <!-- 상장슬라이드 -->
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./slider/jquery.bxslider.js"></script>
+  <!-- 회사연혁 -->
+  <!-- <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="css/timeline.min.css" rel="stylesheet"> -->
+
+
+  <!-- bx슬라이드 -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="nav_top">
+        <a class="logo" href="index.html"><img src="./images/logo.png" alt="로고"></a>
+        <ul class="navbar-right">
+          <li><a href="login.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+          <li><a href="customer_center1.html">고객센터</a></li>
+          <li><a href="mypage.html">마이페이지</a></li>
+          <li><a href="cart.html">장바구니</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" class="search_form" placeholder="1688 제품 URL을 입력하세요.">
+          <span class="search_btn">
+            <button class="sch_btn" type="button"><i class="fas fa-search"></i></button>
+          </span>
+          <span class="camera_btn">
+            <button class="camera_btn" type="button"><i class="fas fa-camera"></i></button>
+          </span>
+        </div>
+      </div>
+      <nav class="main_menu">
+        <ul>
+          <li class="main_menu1"><a href="sub1-1-1.html" title="Link">중달이소개</a>
+            <ul class="sub_menu one">
+              <li><a href="sub1-1-1.html" title="Link">회사소개 <span class="nav_arrow"> » </span></a>
+                <ul class="sub_menu1">
+                  <li><a href="sub1-1-1.html" title="Link">인사말</a></li>
+                  <li><a href="sub1-1-2.html" title="Link">회사비전</a></li>
+                  <li><a href="sub1-1-3.html" title="Link">핵심가치</a></li>
+                  <li><a href="sub1-4.html" title="Link">오시는 길</a></li>
+                </ul>
+              </li>
+              <li><a href="sub1-2-1.html" title="Link">기업역량 <span class="nav_arrow"> » </span></a>
+                <ul class="sub_menu1">
+                  <li><a href="sub1-2-1.html" title="Link">빅파이 연혁</a></li>
+                  <li><a href="sub1-2-2.html" title="Link">저서소개</a></li>
+                  <li><a href="sub1-2-3.html" title="Link">핵심 경쟁력 및 강점</a></li>
+                </ul>
+              </li>
+              <li><a href="sub1-3-1.html" title="Link">서비스 소개 <span class="nav_arrow"> » </span> </a>
+                <ul class="sub_menu1">
+                  <li><a href="sub1-3-1.html" title="Link">사업분야</a></li>
+                  <li><a href="sub1-3-2.html" title="Link">핵심서비스</a></li>
+                  <li><a href="sub1-3-3.html" title="Link">차별화가치</a></li>
+                </ul>
+              </li>
+              <li><a href="sub1-5.html" title="Link">이용후기</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main_menu1"><a href="sub2-1-1.html" title="Link">구매대행</a>
+            <ul class="sub_menu two">
+              <li><a href="sub2-1-1.html" title="Link ">구매대행절차</a></li>
+              <li><a href="sub2-2.html" title="Link">구매대행신청</a></li>
+              <li><a href="mypage1-1.html" title="Link">내 구매대행 내역확인</a></li>
+            </ul>
+          </li>
+          <li class="main_menu1"><a href="sub3-1-1.html" title="Link">배송대행</a>
+            <ul class="sub_menu three">
+              <li><a href="sub3-1-1.html" title="Link">배송대행절차 <span class="nav_arrow"> » </span></a>
+                <ul class="sub_menu1">
+                  <li><a href="sub3-1-1.html" title="Link">절차소개 및 주의사항</a></li>
+                  <li><a href="sub3-1-3.html" title="Link">부가서비스안내</a></li>
+                  <li><a href="sub3-1-4.html" title="Link">배송대행 요금표</a></li>
+                  <li><a href="sub3-1-5.html" title="Link">교환/환불안내</a></li>
+                  <li><a href="sub3-1-6.html" title="Link">개인통관고유부호발급</a></li>
+                </ul>
+              </li>
+              <li><a href="sub3-2-1.html" title="Link">배송대행신청</a>
+              </li>
+              <li><a href="mypage1-2.html" title="Link">내 배송대행 내역확인</a></li>
+            </ul>
+          </li>
+          <li class="main_menu1"><a href="sub4-1-1.html" title="Link">단가조사신청</a>
+            <ul class="sub_menu four">
+              <li><a href="sub4-1-1.html" title="Link">단가조사절차</a>
+                <!-- <ul class="sub_menu1">
+                      <li><a href="sub4-1-1.html" title="Link">단가조사절차안내</a></li>
+                      <li><a href="sub4-1-2.html" title="Link">공장OEM비용안내</a></li>
+                      <li><a href="sub4-1-3.html" title="Link">계좌안내</a></li>
+                    </ul> -->
+              </li>
+              <li><a href="sub4-3.html" title="Link">단가조사 신청</a></li>
+              <li><a href="sub4-4.html" title=" Link">내 단가조사 내역확인</a></li>
+              <li><a href="sub4-5.html" title=" Link">공장 포트폴리오</a></li>
+            </ul>
+          </li>
+          <li class="main_menu1"><a href="sub5-1-1.html" title="Link">무역컨설팅</a>
+            <ul class="sub_menu five">
+              <li><a href="sub5-1-1.html" title="Link">컨설팅/강의<span class="nav_arrow"> » </span> </a>
+                <ul class="sub_menu1">
+                  <li><a href="sub5-1-1.html" title="Link">중달이's 서비스</a></li>
+                  <li><a href="sub5-1-3.html" title="Link">절차 및 신청</a></li>
+                </ul>
+              </li>
+              <li><a href="sub5-3-1.html" title="Link">시장조사단<span class="nav_arrow"> » </span></a>
+                <ul class="sub_menu1">
+                  <li><a href="sub5-3-1.html" title="Link">중달이's 서비스</a></li>
+                  <li><a href="sub5-3-3.html" title="Link">절차 및 신청</a></li>
+                </ul>
+              </li>
+              <li><a href="sub5-4-1.html" title="Link">강의신청<span class="nav_arrow"> » </span></a>
+                <ul class="sub_menu1">
+                  <li><a href="sub5-4-1.html" title="Link">강의일정 및 신청</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="main_menu1"><a href="sub5-5-2.html" title="Link">중달이's Choice</a>
+            <ul class="sub_menu five">
+              <li><a href="sub5-5-2.html" title="Link">공장OEM 포트폴리오</a></li>
+              <li><a href="sub5-5-3.html" title="Link">중달이 MD 픽</a></li>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </nav>
+      <!--GNB mobile-->
+      <div id="m_header">
+        <div class="top_menu">
+          <div class="top_inner">
+            <h1 class="mainlogo"><a href="./app/app_index.html"><img src="./images/m_logo(n).png" alt="logo"></a></h1>
+
+            <div id="hamburger_wrapper">
+              <div id="hamburger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="tm_cart_link">
+              <a href="cart.html"><img src="./images/m_menu2.png" alt="cart"></a>
+            </div>
+
+          </div>
+
+          <div class="tm_middle">
+            <!-- 검색 프로그램 시작-->
+            <div class="search">
+              <input type="text" class="search_form" placeholder="1688 제품 URL을 입력하세요.">
+              <span class="search_btn">
+                <button class="sch_btn" type="button"><i class="fas fa-search"></i></button>
+              </span>
+              <span class="camera_btn">
+                <button class="camera_btn" type="button"><i class="fas fa-camera"></i><span
+                    class="camera_txt">&nbsp;이미지검색</span></button>
+              </span>
+            </div>
+            <!-- 검색 프로그램 끝-->
+          </div>
+        </div>
+
+        <div class="allMenu">
+
+          <div class="btns">
+            <button type="button" onclick="location.href='app_login.html'" class="btn_login">로그인</button>
+            <button type="button" onclick="location.href='app_join.html'" class="btn_join">회원가입</button>
+            <!--로그인되어있을 시-->
+            <!-- <button type="button" onclick="location.href=''">로그아웃</button>
+              <button type="button" onclick="location.href='app_mypage.html'">마이페이지</button> -->
+          </div>
+
+
+          <div class="link_wrap clearfix">
+            <a href="app_mypage.html">마이페이지</a>
+            <a href="app_cart.html">장바구니</a>
+            <a href="app_customer_center1.html">고객센터</a>
+          </div>
+
+
+          <h4>카테고리</h4>
+          <ul class="accordion category">
+            <li id="nav1" class="toggle accordion-toggle list_accordion">
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">중달이소개</a>
+            </li>
+            <ul class="menu-submenu accordion-content">
+              <li><a class="head" href="app_sub1-1-1.html">인사말</a></li>
+              <li><a class="head" href="app_sub1-1-2.html">회사비전</a></li>
+              <li><a class="head" href="app_sub1-3-2.html">핵심서비스</a></li>
+              <li><a class="head" href="app_sub1-5.html">고객님들의 생생한 이용후기</a></li>
+              <li><a class="head" href="app_sub1-6.html">구독 좋아요 = 중달이</a></li>
+            </ul>
+
+            <li id="nav2" class="toggle accordion-toggle list_accordion">
+              <span class="icon-plus"></span>
+              <a href="#">구매대행</a>
+            </li>
+            <ul class="menu-submenu accordion-content">
+              <li><a class="head" href="app_sub2-1-1.html">절차소개</a></li>
+              <li><a class="head" href="app_sub2-2.html">구매대행신청</a></li>
+            </ul>
+
+            <li id="nav3" class="toggle accordion-toggle list_accordion">
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">배송대행</a>
+            </li>
+            <ul class="menu-submenu accordion-content">
+              <li><a class="head" href="app_sub3-1-1.html">절차소개 및 주의사항</a></li>
+              <li><a class="head" href="app_sub3-1-3.html">부가서비스 안내</a></li>
+              <li><a class="head" href="app_sub3-1-4.html">배송대행 요금표</a></li>
+              <li><a class="head" href="app_sub3-1-5.html">교환 및 환불 안내</a></li>
+              <li><a class="head" href="app_sub3-1-6.html">개인통관고유부호 발급</a></li>
+              <li><a class="head" href="app_sub3-2-1.html">배송대행 신청</a></li>
+              <li><a class="head" href="app_mypage1-2.html">내 배송대행 내역 확인</a></li>
+            </ul>
+
+            <li id="nav4" class="toggle accordion-toggle list_accordion">
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">단가조사</a>
+            </li>
+            <ul class="menu-submenu accordion-content">
+              <li><a class="head" href="app_sub4-1-1.html">단가조사 절차</a></li>
+              <li><a class="head" href="app_sub4-3.html">단가조사 신청</a></li>
+              <li><a class="head" href="app_sub4-4.html">내 단가조사 내역 확인</a></li>
+              <li><a class="head" href="app_sub4-5.html">공장 포트폴리오</a></li>
+            </ul>
+
+            <li id="nav5" class="toggle accordion-toggle list_accordion">
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">무역컨설팅</a>
+            </li>
+
+            <ul class="menu-submenu accordion-content">
+              <li><a class="head" href="app_sub5-1-3.html">컨설팅&강의 절차 및 신청</a></li>
+              <li><a class="head" href="app_sub5-3-1.html">시장조사단 중달이's 서비스</a></li>
+              <li><a class="head" href="app_sub5-3-3.html">시장조사단 절차 및 신청</a></li>
+              <li><a class="head" href="app_sub5-4-1.html">강의 일정 및 신청</a></li>
+            </ul>
+            <li id="nav6" class="toggle accordion-toggle list_accordion">
+              <span class="icon-plus"></span>
+              <a class="menu-link" href="#">중달이's Choice</a>
+            </li>
+
+            <ul class="menu-submenu accordion-content">
+              <li><a class="head" href="app_sub5-5-2.html">공장 OEM 포트폴리오</a></li>
+              <li><a class="head" href="app_sub5-5-3.html">중달이 MD 픽</a></li>
+            </ul>
+          </ul>
+
+          <!-- <h4>게시판</h4>
+          <div class="link_wrap clearfix">
+              <a href="event.html">이벤트</a>
+          </div> -->
+
+          <h4>고객센터</h4>
+          <div class="link_wrap clearfix">
+            <a href="app_customer_center1.html">공지사항</a>
+            <a href="app_customer_center2.html">자주하는 질문</a>
+            <a href="app_customer_center3.html">1:1문의</a>
+          </div>
+
+          <div class="side_footer">
+            <a href="sub6-1.html" class="footer_menu_item">이용약관</a>
+            <a href="sub6-2.html" class="footer_menu_item">개인정보취급방침</a>
+            <a href="sub6-3.html" class="footer_menu_item">개인정보의 수집 및 이용목적</a>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <div class="m_scroll_wrap">
+      <ul>
+        <li><a href="./app/app_sub1-1-1.html">중달이소개</a></li>
+        <li><a href="sub2-1-1.html">구매대행</a></li>
+        <li><a href="sub3-1-1.html">배송대행</a></li>
+        <li><a href="sub4-1-1.html">공장OEM단가</a></li>
+        <li><a href="sub5-1-3.html">무역컨설팅</a></li>
+        <li class="current"><a href="./app/app_sub5-5-2.html">중달이's Choice</a></li>
+      </ul>
+    </div>
+
+    <div class="m_sub_nav accordion_list clearfix">
+      <div>
+        <ul class="m_sub_nav_ul">
+          <li id="nav1" class="accordion_title">
+            <a href="#">회사소개</a>
+            <i class="fas fa-angle-down"></i>
+          </li>
+          <ul class="accordion_conts">
+            <li class="head"><a href="sub1-2-1.html">기업역량</a></li>
+            <li class="head"><a href="sub1-3-1.html">서비스소개</a></li>
+            <li class="head"><a href="sub1-5.html">이용후기</a></li>
+          </ul>
+        </ul>
+      </div>
+      <div>
+        <ul class="m_sub_nav_ul">
+          <li id="nav2" class="accordion_title">
+            <a href="#">인사말</a>
+            <i class="fas fa-angle-down"></i>
+          </li>
+          <ul class="accordion_conts">
+            <li class="head"><a href="sub1-1-1.html">인사말</a></li>
+            <li class="head"><a href="sub1-1-2.html">회사비전</a></li>
+            <li class="head"><a href="sub1-1-3.html">핵심가치</a></li>
+            <li class="head"><a href="sub1-1-4.html">오시는길</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 220727 상단 검색 필터링 메뉴 _sy-->
+    <div id="subcontent" class="subcontent_login">
+      <section class="section section01">
+        <nav class="search_nav">
+          <ul class="tabs">
+            <li><a href="#" class="tab-link current" data-tab="tab-1">최신순</a></li>
+            <li><a href="#" class="tab-link current" data-tab="tab-2">판매량순</a></li>
+            <li><a href="#" class="tab-link current" data-tab="tab-3">가격낮은순</a></li>
+            <li><a href="#" class="tab-link current" data-tab="tab-4">가격높은순</a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+
+    <!-- 이미지 상세정보 -->
+    <!-- <div class="img_info">
+      <div class="imgBox">
+        <img src="./images/sub/sub4-4_img.jpg" alt="">
+      </div>
+      <div class="imgTxt">
+        <p>파일명 : <span>sub4-4_img.jpg</span></p>
+        <p>이미지 크기 : <span>500px * 500px</span></p>
+      </div>
+    </div> -->
+
+    <div class="subcontent3 review_section">
+      <div class="subcontarea sub4-4 img_sch_wrap">
+
+        <!-- 내역없을 때 -->
+        <!-- <div class="empty_box">
+            <p class="empty">이미지를 찾을 수 없습니다.</p>
+          </div> -->
+
+        <!--220727 제품 이미지 영역 _sy  -->
+        <div class="search_image_box">
+          <div class="search_image_wrap">
+            <div class="search_prod">
+              <ul>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/sub/sub_img.png" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <div class="prod_text_wrap">
+                      <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                      <div class="price">
+                        <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                      </div>
+                      <p>스토어 점수
+                        <strong class="grade">4.8
+                          <span class="">
+                            <span class="blind">/</span>
+                          </span>5
+                        </strong>
+                      </p>
+                      <div class="level">
+                        <p>업체등급 </p>
+                        <img src="./images/mainbanner3(n).png" alt="">
+                      </div>
+                    </div>
+                    <!-- 제품 상세페이지 하단_구매하기,장바구니 버튼 _sy -->
+                    <!-- <div class="prod_btn">
+                      <button type="button" class="buy_btn">구매하기</button>
+                      <button type="button" class="basket_btn">장바구니</button>
+                    </div>
+                  </div> -->
+                </li>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/main_banner1.png" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                    <div class="price">
+                      <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                    </div>
+                    <p>스토어 점수
+                      <strong class="grade">4.8
+                        <span class="">
+                          <span class="blind">/</span>
+                        </span>5
+                      </strong>
+                    </p>
+                    <div class="level">
+                      <p>업체등급 </p>
+                      <img src="./images/book_bg2.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/main_banner2.jpg" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                    <div class="price">
+                      <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                    </div>
+                    <p>스토어 점수
+                      <strong class="grade">4.8
+                        <span class="">
+                          <span class="blind">/</span>
+                        </span>5
+                      </strong>
+                    </p>
+                    <div class="level">
+                      <p>업체등급 </p>
+                      <img src="./images/book_bg2.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/main_banner3.png" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                    <div class="price">
+                      <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                    </div>
+                    <p>스토어 점수
+                      <strong class="grade">4.8
+                        <span class="">
+                          <span class="blind">/</span>
+                        </span>5
+                      </strong>
+                    </p>
+                    <div class="level">
+                      <p>업체등급 </p>
+                      <img src="./images/book_bg2.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/main_banner1.png" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                    <div class="price">
+                      <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                    </div>
+                    <p>스토어 점수
+                      <strong class="grade">4.8
+                        <span class="">
+                          <span class="blind">/</span>
+                        </span>5
+                      </strong>
+                    </p>
+                    <div class="level">
+                      <p>업체등급 </p>
+                      <img src="./images/book_bg2.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/main_banner2.png" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                    <div class="price">
+                      <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                    </div>
+                    <p>스토어 점수
+                      <strong class="grade">4.8
+                        <span class="">
+                          <span class="blind">/</span>
+                        </span>5
+                      </strong>
+                    </p>
+                    <div class="level">
+                      <p>업체등급 </p>
+                      <img src="./images/book_bg2.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/main_banner3.png" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                    <div class="price">
+                      <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                    </div>
+                    <p>스토어 점수
+                      <strong class="grade">4.8
+                        <span class="">
+                          <span class="blind">/</span>
+                        </span>5
+                      </strong>
+                    </p>
+                    <div class="level">
+                      <p>업체등급 </p>
+                      <img src="./images/book_bg2.png" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="url_sch_btn">
+                    <img src="./images/sub/sub_img.png" alt="">
+                    <button type="button" class="prod_heart on">관심목록누르기</button>
+                  </a>
+                  <div class="prod_text">
+                    <em class="hover_effect">2022 남성 와이드 바지 5가지 색상 고급 원단</em>
+                    <div class="price">
+                      <span class="hover_effect">11,032원 <b>(¥56.00)</b></span><span class="num_02"> 재구매율 <b>7%</b></span>
+                    </div>
+                    <p>스토어 점수
+                      <strong class="grade">4.8
+                        <span class="">
+                          <span class="blind">/</span>
+                        </span>5
+                      </strong>
+                    </p>
+                    <div class="level">
+                      <p>업체등급 </p>
+                      <img src="./images/book_bg2.png" alt="">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="page_num">
+                <ul>
+                  <li><a href="index.html"><i class="fas fa-angle-double-left"></i></a></li>
+                  <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                  <li class="on"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                  <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 최적화 정보 써치 알림멘트 -->
+        <div class="search_loading">
+          <div class="search_loading_wrap">
+            <img src="./images/sub/sub_logo1(n).png" alt="써치이미지">
+            <h1>최적화 된 정보들을 찾고 있는 중입니다.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="foot">
+        <div class="foot_left">
+          <div>
+            <ul class="menu">
+              <li><a href="sub6-1.html">이용약관</a></li>
+              <li><a href="sub6-2.html">개인정보취급방침</a></li>
+              <li><a href="sub6-3.html">개인정보의 수집 및 이용목적</a></li>
+            </ul>
+          </div>
+          <div class="w_address">
+            상호:(주)빅파이씨앤티 | 법인 등록번호 : 169-81-00496 | 전화번호 : 070-7776-1688 | 팩스번호 : 032-714-3850 <br>
+            경기도 부천시 조마루로 385번길 122 삼보테크노타워 2702-3호 (주)빅파이씨앤티 <br>
+            대표이사: 이중엽 | 통신판매 신고번호 : 제2013-경기부천-0030호 | 개인정보보호책임자 : 이혜영 | 메일: pi@jungdari.com
+          </div>
+          <div class="m_address">
+            상호:(주)빅파이씨앤티 | 법인 등록번호 : 169-81-00496 <br> 전화번호 : 070-7776-1688 | 팩스번호 : 032-714-3850 <br>
+            경기도 부천시 조마루로 385번길 122 삼보테크노타워 2702-3호 (주)빅파이씨앤티 <br>
+            대표이사: 이중엽 | 통신판매 신고번호 : 제2013-경기부천-0030호 <br> 개인정보보호책임자 : 이혜영 | 메일: pi@jungdari.com
+          </div>
+          <div class="copyright">
+            Copyrights2020ⓒBigpieC&T. All Rights Reserved
+          </div>
+        </div><!-- foot_left -->
+        <div class="foot_right">
+          <div class="tel_box">
+            <p>고객문의</p>
+            <ul class="tel">
+              <li><a href="">070-7776-1688</a></li>
+            </ul>
+          </div>
+          <div class="logo_box">
+            <img src="./images/foot_logo.png" alt="하단로고" class="foot_logo">
+            <ul class="sns_box">
+              <li><img src="./images/sns1.png" alt="인스타그램"></li>
+              <li><img src="./images/sns2.png" alt="트위터"></li>
+              <li><img src="./images/sns3.png" alt="구글"></li>
+            </ul>
+          </div>
+        </div>
+        <!-- foot_right -->
+
+      </div><!-- foot -->
+    </footer>
+    <footer class="footer_m">
+      <div class="footer_detail">
+        <div class="footer_menu">
+          <a href="login.html" class="footer_menu_item">로그인</a>
+          <!-- 로그인 되어 있을 시-->
+          <!-- <a href="login.html" class="footer_menu_item">로그아웃</a> -->
+          <a href="notice.html" class="footer_menu_item">공지사항</a>
+          <a href="customer_center1.html" class="footer_menu_item">고객센터</a>
+        </div>
+        <div class="footer_address accordion_list">
+          <span class="accordion_title"><strong>중달이 정보 ▼</strong></span>
+          <div class="accordion_conts">
+            <dl>
+              <dt>상호명</dt>
+              <dd>(주)빅파이씨앤티</dd>
+              <dt>대표이사</dt>
+              <dd>이중엽</dd>
+              <dt>법인등록번호</dt>
+              <dd>169-81-00496</dd>
+              <dt>주소</dt>
+              <dd>경기도 부천시 조마루로 385번길 122 삼보테크노타워 270-3호 (주)빅파이씨앤티</dd>
+              <dt>대표전화</dt>
+              <dd><a href="tel:070-7776-1688">070-7776-1688</a></dd>
+              <dt>FAX</dt>
+              <dd>(032)714-3850</dd>
+              <dt>고객문의</dt>
+              <dd><a href="tel:070-8702-4045">070-8702-4045</a></dd>
+              <dt>&emsp;</dt>
+              <dd><a href="tel:070-7788-4045">070-7788-4045</a></dd>
+              <dt>통신판매신고번호</dt>
+              <dd>제2013-경기부천-0030호</dd>
+              <dt>개인정보보호책임자</dt>
+              <dd>이혜영</dd>
+              <dt>메일</dt>
+              <dd>pi@jungdari.com</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="footer_legal">
+          <!-- <a href="http://ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2020366016030200708&pageUnit=10&searchCnd=wrkr_no&searchKrwd=4338601542&pageIndex=1" class="footer_legal_link">사업자정보확인</a> -->
+          <a href="#" class="footer_legal_link">이용약관</a>
+          <a href="sub1.html" class="footer_legal_link">개인정보취급방침</a>
+          <a href="sub2.html" class="footer_legal_link">개인정보의 수집 및 이용목적</a>
+        </div>
+        <p class="footer_copyright">Copyrights2020ⓒBigpieC&T. All Rights Reserved</p>
+      </div>
+    </footer>
+  </div><!-- wrap -->
+  <div id="slidemenu">
+    <ul>
+      <li class="q_m1"><a href="mypage.html"><img src="./images/q_icon1.png" alt="마이페이지"> <span
+            class="quick_tit">마이페이지</span> </a></li>
+      <li class="q_m2"><a href="sub3-2-1.html"><img src="./images/q_icon2.png" alt="배송대행신청"><span class="quick_tit">배송대행
+            신청</span> </a></li>
+      <li class="q_m3"><a href="sub2-2.html"><img src="./images/q_icon3.png" alt="구매대행신청"><span class="quick_tit">구매대행
+            신청</span> </a></li>
+      <li class="q_m4"><a href="sub2-2.html"><img src="./images/q_icon4.png" alt="예상비용계산하기"><span
+            class="quick_tit">예상비용</span> <span class="quick_tit">계산하기 </span></a></li>
+      <li class="q_m5"><a href="https://pf.kakao.com/_aKUxoV"><img src="./images/q_icon5.png" alt="카카오톡문의"><span
+            class="quick_tit">카카오톡 문의</span> </a></li>
+    </ul>
+    <div class="top"><a href="#"><img src="./images/top.png" alt="위로"></a></div>
+  </div>
+  <div class="main_pop">
+    <div class="pop_box">
+      <div class="pop_close"><i class="fas fa-times"></i></div>
+      <div class="pop_tit">URL 검색</div>
+      <table class="member_form pop">
+        <colgroup>
+          <col style="width:20%;">
+          <col style="width:42%;">
+          <col style="width:28%;">
+        </colgroup>
+        <tbody>
+          <tr class="member_form_list">
+            <th class="member_form_list_tit pop">
+              링크&nbsp;<span>(Link)</span>
+            </th>
+            <td class="member_form_list_box">
+              <input type="text" name="" id="" class="u-pw m_inp pop">
+            </td>
+            <td rowspan="6" class="member_img">
+              <div class="pop_img">
+                <img src="https://via.placeholder.com/200x200" alt="">
+              </div>
+            </td>
+          </tr>
+          <tr class="member_form_list">
+            <th class="member_form_list_tit pop">
+              제품명&nbsp;<span>(Product)</span>
+            </th>
+            <td class="member_form_list_box">
+              <input type="text" name="" id="" class="u-pw m_inp pop">
+            </td>
+          </tr>
+          <tr class="member_form_list">
+            <th class="member_form_list_tit pop">
+              사이트 기본가격&nbsp;<span>(Price)</span>
+            </th>
+            <td class="member_form_list_box">
+              <input type="text" name="" id="" class="u-pw m_inp pop">
+            </td>
+          </tr>
+          <tr class="member_form_list">
+            <th class="member_form_list_tit pop">
+              중국 내 운임비<span>(Freight Charge)</span>
+            </th>
+            <td class="member_form_list_box">
+              <input type="text" name="" id="" class="u-pw m_inp pop">
+            </td>
+          </tr>
+          <tr class="member_form_list">
+            <th class="member_form_list_tit pop">
+              수량<span>(Quantity)</span>
+            </th>
+            <td class="member_form_list_box">
+              <input type="text" name="" id="" class="u-pw m_inp pop">
+            </td>
+          </tr>
+          <tr class="member_form_list">
+            <th class="member_form_list_tit pop">
+              비고<span>(Remarks)</span>
+            </th>
+            <td class="member_form_list_box">
+              <input type="text" name="" id="" class="u-pw m_inp pop">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pop_btn">
+        <input type="button" value="장바구니 담기" class="pop_btn button one cd-popup-trigger1-1">
+        <input type="button" value="닫기" class="pop_btn button two pop_btn2">
+      </div>
+    </div>
+  </div>
+  <!-- 이미지 검색 popup1-1 -->
+  <div class="cd-popup1-1 url_sch_pop" role="alert">
+    <div class="cd-popup-container1-1">
+      <!-- <div class="pop_tit">URL 검색</div> -->
+
+      <img src="./images/sub/business_icon01_bl.png" alt="">
+      <h4>장바구니에 상품이<br>정상적으로 담겼습니다.</h4>
+
+      <div class="sch_item_box clearfix">
+        <div class="left">
+          <div class="pop_img">
+            <img src="https://via.placeholder.com/200x200" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <table class="member_form pop">
+            <colgroup>
+              <col style="width:30%;">
+              <col style="width:70%;">
+            </colgroup>
+            <tbody>
+              <tr class="member_form_list">
+                <th class="member_form_list_tit pop">
+                  링크&nbsp;<span>(Link)</span>
+                </th>
+                <td class="member_form_list_box">
+                  <span>http://jungdari.devlk.net/imgimgimg</span>
+                </td>
+              </tr>
+              <tr class="member_form_list">
+                <th class="member_form_list_tit pop">
+                  제품명&nbsp;<span>(Product)</span>
+                </th>
+                <td class="member_form_list_box">
+                  <span>제품명</span>
+                </td>
+              </tr>
+              <tr class="member_form_list">
+                <th class="member_form_list_tit pop">
+                  사이트 기본가격&nbsp;<span>(Price)</span>
+                </th>
+                <td class="member_form_list_box">
+                  <span>CNY </span>
+                </td>
+              </tr>
+              <tr class="member_form_list">
+                <th class="member_form_list_tit pop">
+                  중국 내 운임비<span><br>(Freight Charge)</span>
+                </th>
+                <td class="member_form_list_box">
+                  <span class="FreightCharge">운임비</span>
+                </td>
+              </tr>
+              <tr class="member_form_list">
+                <th class="member_form_list_tit pop">
+                  수량<span>(Quantity)</span>
+                </th>
+                <td class="member_form_list_box">
+                  <span>3</span>
+                </td>
+              </tr>
+              <tr class="member_form_list">
+                <th class="member_form_list_tit pop">
+                  비고<span>(Remarks)</span>
+                </th>
+                <td class="member_form_list_box">
+                  <span></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+      <ul class="cd-buttons">
+        <li><a href="cart.html">장바구니 이동</a></li>
+        <li><a href="#" class="cd-popup-close-btn">쇼핑 계속하기</a></li>
+      </ul>
+      <a href="#0" class="cd-popup-close img-replace pop_close"></a>
+    </div>
+  </div>
+</body>
+
+
+<script>
+  // 220727 검색 페이지 리스트 필터 탭메뉴
+  jQuery('ul.tabs li').click(function () {
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('current');
+
+    $(this).addClass('current');
+    $("#" + tab_id).addClass('current');
+
+  });
+</script>
+
+
+</html>
