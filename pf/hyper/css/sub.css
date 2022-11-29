@@ -1,0 +1,743 @@
+@charset "utf-8";
+@import url('font.css'); /* 사이트 세부설정, 공통 클래스 설정, 기타 설정 */
+
+/*common*/
+.sub_container{font-size:16px;  color:#444444; padding:0 0 50px; min-height:500px;}
+/* .sub_contents{padding-top:40px;} */
+.sub_contents>h4{font-size:30px; text-align:left;  color:#000000; padding: 80px 0 60px;}
+.sub_contents>h4>span{margin-top:15px; display:block; font-size:60px; color:#e6e6e6; letter-spacing:-2px; font-weight:normal; position:relative;}
+.sub_contents>h4>span:before{content:''; display:block; width:1px; height:30px; background-color:#255aa7;
+		position:absolute; left:50%; top:-15px;}
+/* .contents_wrap{margin-top:35px; text-align: center;} */
+
+
+/***서브 비주얼***/
+.sub_visual{display:table;  width:100%;  min-height:300px; background-repeat:no-repeat; background-position:center center; background-size:cover;}
+.sub_visual_txt{display:table-cell;  vertical-align:middle; text-align:center; color:#ffffff; font-size:20px; font-weight:400; font-family:NanumSquare,'나눔스퀘어';padding:0 10px;}
+.sub_visual_txt strong{font-size:40px; font-weight:800; color:#fff;}
+/* .sub_visual_txt02 strong,.sub_visual_txt03 strong,.sub_visual_txt04 strong,.sub_visual_txt05 strong,.sub_visual_txt06 strong{color:#9bc83d;} */
+/* .sub_visual_txt p{margin-top:5px;} */
+.sub_visual01{background-image:url("../images/sub/header_bn01.png");}
+.sub_visual02{background-image:url("../images/sub/header_bn02.png");}
+.sub_visual03{background-image:url("../images/sub/header_bn03.png");}
+.sub_visual04{background-image:url("../images/sub/header_bn06.png");}
+/***sub_tab_bar 가로 서브메뉴 선택 탭-common 1200px이하***/
+.sub_tab_bar{display:none; background-color:#255aa7;}
+.sub_tab_bar>div>div{float:left; color:#a1b4d1; position:relative;}
+.sub_tab_bar>div>div+div{border-left:1px solid #3166b4;}
+.sub_tab_bar a{display:block;}
+.sub_tab_bar h4,.sub_tab_bar h3{ padding:8px 15px 6px; font-size:15px; cursor:pointer;}
+.sub_tab_bar strong{font-weight:normal;}
+.sub_tab_01{width:14%;}
+.sub_tab_02{width:42.5%;}
+.sub_tab_03{width:42.5%;}
+.sub_title.open{color:#ffffff;}
+.sub_title:hover{color:#ffffff;}
+/*icon_home*/
+.sub_tab_01{text-align:center;}
+.sub_tab_01>a{padding:9px 0 8px;}
+.sub_tab_01>a:hover .icon_home02:before{border-bottom-color:#ffffff;}
+.sub_tab_01>a:hover .icon_home02:after{border-color:#ffffff;}
+.sub_tab_01 .icon_home02{width:16px; height:14px; display:inline-block; position:relative;  font-size:0; vertical-align:middle;}
+.sub_tab_01 .icon_home02:before{content:''; width:0; height:0px; display:block; position:absolute; left:0px; top:0px;
+		border:7px solid transparent; border-bottom-color:#a1b4d1; border-top:0; transform:scale(1,0.8);-webkit-transform:scale(1,0.8);
+		-moz-transform:scale(1,0.8);-o-transform:scale(1,0.8);-ms-transform:scale(1,0.8);}
+.sub_tab_01 .icon_home02:after{content:''; width:4px; height:4px; display:block; position:absolute; left:2px; top:6px;
+		border:3px solid #a1b4d1; border-top-width:3px; border-bottom:0;}
+/*메뉴 더보기*/
+.sub_tab_bar .menu_more{position:absolute; right:12px; top:13px; width:11px; height:11px; overflow:hidden;
+		text-indent:-999999px; display:block; font-size:0;}
+.sub_tab_bar .menu_more:after,.sub_tab_bar .menu_more:before{content:''; display:block; background-color:#a1b4d1; 
+		width:11px; height:1px; position:absolute; left:0; top:5px;}
+.sub_tab_bar .menu_more:after{width:1px; height:11px; left:5px; top:0; }
+.sub_title.open .menu_more:after,.sub_title.open .menu_more:before{background-color:#ffffff;}
+.sub_title:hover .menu_more:after,.sub_title:hover .menu_more:before{background-color:#ffffff;}
+/*sub_tab_2depth 메뉴*/
+.sub_tab_2depth{display:none; position:absolute; left:-1px; top:39px; width:100.5%; z-index:200; background-color:#f8f8f8;
+		 font-size:14px; padding:5px 10px 5px 15px; border-left:1px solid #dddddd; border-right:1px solid #dddddd; border-bottom:1px solid #dddddd;}
+.sub_tab_2depth>li{padding:2px 0;}
+.sub_tab_2depth>li>a{display:block; color:#838384;}
+.sub_tab_2depth>li>a:hover{color:#255aa7; }
+
+/*horizontal_menu_bar 가로 서브메뉴 1201px이상*/
+.horizontal_menu_bar{ border-bottom:1px solid #dddddd; text-align:center; background-color:#f1f1f1;}
+.horizontal_menu_bar>h3{float:left; font-size:18px;  width:220px; height:50px; background-color:#255aa7; 
+		color:#ffffff; display:table;}
+.horizontal_menu_bar>h3>span{ display:table-cell; width:100%; height:100%; vertical-align:middle;}
+.horizontal_menu_bar>ul{float:right;}
+.horizontal_menu_bar>ul>li{float:left; width:175px; height:50px; display:table; border-left:1px solid #e6e6e6; } 
+.horizontal_menu_bar>ul>li>a{color:#000000; display:table-cell; width:100%; height:100%; vertical-align:middle; border-top:2px solid #666666;}
+.horizontal_menu_bar>ul>li>a.h_menu.on{border-top:2px solid #255aa7; color:#255aa7; background-color:#ffffff;}
+
+/*company_introduce_wrap회사소개*/
+/* .company_introduce_container{background:url("../images/sub/bg_company_introduce.png")no-repeat center center; background-size:cover;} */
+.company_introduce_wrap>span{display:block; margin:0 auto; max-width:70%; position:relative;}
+.company_introduce_wrap>span>img{display:block;  vertical-align:top; width:100%;  z-index:2;}
+.company_introduce_wrap>span:after{content: ""; position: absolute;  right: 5px; left: auto; top: auto; bottom:15px;
+		box-shadow:5px 20px 10px rgba(0,0,0,0.1); transform: rotate(3deg); z-index:-1; width: 50%; height: 20%; }
+.company_introduce_wrap>div{margin:50px auto 0; max-width:70%; text-align:center;}
+.company_introduce_wrap em{display:block; font-weight:bold; font-family:NanumSquare,'나눔스퀘어';  font-size:26px; letter-spacing:-1px; color:#000000;}
+.company_introduce_wrap p{font-size:19px; margin-top:30px;}
+.company_introduce_wrap em span{color:#255aa7; border-bottom:1px solid #255aa7; }
+
+/* management_wrap 경영이념*/
+.management_container{background:url("../images/sub/bg_company_introduce.png")no-repeat center center; background-size:cover;}
+.management_wrap>div {
+    margin: 50px auto 0;
+    max-width: 70%;
+    text-align: center;
+}
+.management_wrap em {
+    display: block;
+    font-weight: bold;
+    font-family: NanumSquare,'나눔스퀘어';
+    font-size: 26px;
+    letter-spacing: -1px;
+    color: #000000;
+}
+.management_wrap em span {
+    color: #255aa7;
+    border-bottom: 1px solid #255aa7;
+}
+.management_wrap p {
+    font-size: 19px;
+    margin-top: 30px;
+}
+.management_wrap span>img{max-width:100%; display:block; margin:0 auto;}
+
+/*organization_chart_wrap 조직도*/
+/* .organization_chart_container{background:url("../images/sub/bg_company_introduce.png")no-repeat center center; background-size:cover;} */
+.organization_chart_wrap{text-align:center; font-weight:bold;}
+.organization_chart01{padding-top:20px;}
+.organization_chart01 .chart_1depth{margin:0 auto; width:240px; padding:10px 0; font-size:22px; color:#ffffff;
+		background:url("../images/sub/bg_ceo.jpg")no-repeat center center; border-radius:3px; position:relative;}
+.organization_chart01 .chart_1depth:after{content:''; width:1px; height:260px; display:block; position:absolute;left:50%; top:100%;
+		background-color:#bbbbbb;}
+.organization_chart02{margin-top:90px; position:relative;}
+.organization_chart02:after{content:''; width:50%; height:1px; display:block; position:absolute;left:25%; top:50%;
+		background-color:#bbbbbb; z-index:-1}
+.organization_chart02>div{display:inline-block; margin:0 auto; width:200px; padding:8px 0; font-size:19px; color:#ffffff;
+		background:url("../images/sub/bg_department.jpg")no-repeat center center; border-radius:3px;}
+.organization_chart02>div{margin:0 25px 0 25px;}
+.organization_chart03{margin-top:170px; position:relative; display: flex; justify-content: center;}
+.organization_chart03:before{content:''; width:26.1%; height:1px; display:block; position:absolute;left:50%; transform:translateX(-50%); top:-49px;
+		background-color:#bbbbbb; z-index:-1}
+.organization_chart03>div{float:left; width:22%; padding:8px 0; font-size:17px; color:#111111; border-radius:3px; border:2px solid #999999;
+		background-color:#eeeeee; position:relative;} 
+.organization_chart03>div+div{margin-left:4%;}
+.organization_chart03>div:before{content:''; width:1px; height:50px; display:block; position:absolute; left:50%; top:-50px;
+		background-color:#bbbbbb;}
+
+/*****오시는길*****/
+.map{text-align: center;}
+.map_txt{margin:50px auto 0; color:#333333; font-size:18px; clear:both; } 
+.map_txt table{width:100%; border-top:2px solid #444;	border-collapse:collapse; border-spacing: 0;}
+.map_txt table th{width:20%; padding:10px 25px; border-bottom:1px solid #e6e6e6; border-right:1px solid #e6e6e6; 
+		text-align:left; font-weight:normal; font-size: 15px;}
+.map_txt table td{width:80%; padding:10px 20px; border-bottom:1px solid #e6e6e6; text-align: left; color: #707275;font-size: 15px;}
+.map_txt table tr:last-child th,.map_txt table tr:last-child td{border-bottom:1px solid #e6e6e6;}
+
+
+/*business01_wrap 임상병리(진단검사의학)팀*/
+.business01_wrap{background:url("../images/sub/bg_company_introduce.png")no-repeat center center; background-size:cover;}
+.business01_title{text-align: center;}
+.business01_wrap>div+div{margin-top:60px;}
+.business01_wrap h5{font-size:21px; color:#000000; padding-left:30px; background:url("../images/sub/bg_h5.png")no-repeat 0 center;
+		background-size:24px auto;}
+.business01_wrap p{margin-top:10px;}
+.business01_title h4{font-size:24px;  color:#000000; }
+.business01_title>p{color:#111111;}
+.business01_contents>div{margin-top:30px;}
+.business01_contents>div *{display:block; }
+.business01_contents>div>em{color:#000000; font-weight:bold;}
+.business01_contents>div>span{float:left; width:48%; margin-top:8px; position:relative; transition: All 0.3s ease;}
+.business01_contents>div>span:after{content: ""; position: absolute;  right: 5px; left: auto; top: auto; bottom:15px;
+		box-shadow:3px 12px 8px rgba(0,0,0,0.4); transform: rotate(3deg); z-index:-1; width: 50%; height: 20%; }
+.business01_contents>div>span+span{margin-left:4%;}
+.business01_contents>div>span img{width:100%; vertical-align:top;}
+.business01_contents>div>span.effect_img:after{display:none;}
+.business01_contents table{margin-top:40px; width:100%; border-collapse:collapse; border-spacing:0; }
+.business01_contents table caption{font-size:0;} 
+.business01_contents table th,.business01_contents table td{text-align:center; padding:6px 5px;  border:1px solid #dbebeb; }
+.business01_contents table th{color:#ffffff; background-color:#159fa3; padding:11px 5px;}
+.business01_contents02 .division{width:50%; color:#ffffff; background-color:#159fa3; padding:11px 5px; font-weight: 700;}
+.business01_contents02 .clause02{width:50%; background-color: #fff; color:#444; font-weight: normal;}
+.business01_contents dl{margin-top:10px; padding-left:10px;}
+.business01_contents dt{font-weight:bold; color:#159fa3; font-size:18px;}
+.business01_img{text-align: center;}
+
+
+.product_img{display: flex;}
+.product_img div{width: 50%;}
+.product_img div h1{text-align: center;}
+
+/*business02_wrap 조직병리팀*/
+.business02_wrap>div+div{margin-top:60px;}
+.business02_wrap h5{font-size:21px; color:#000000; padding-left:30px; background:url("../images/sub/bg_h5.png")no-repeat 0 center;
+		background-size:24px auto;}
+.business02_wrap p{font-size:18px; margin-top:10px;}
+.business02_title h4{font-size:24px;  color:#000000; }
+.business02_title>p{color:#111111;}
+.business02_contents ul{margin-top:30px;}
+.business02_contents ul>li{width:32%; margin-bottom:25px; float:left;  transition: All 0.3s ease;}
+.business02_contents ul>li+li{margin-left:2%;}
+.business02_contents ul>li:nth-child(3n+1){margin-left:0%;}
+.business02_contents ul>li *{display:block; }
+.business02_contents ul>li>span{width:100%; position:relative;}
+.business02_contents ul>li>span:after{content: ""; position: absolute;  right: 5px; left: auto; top: auto; bottom:15px;
+		box-shadow:3px 12px 8px rgba(0,0,0,0.4); transform: rotate(3deg); z-index:-1; width: 50%; height: 20%; }
+.business02_contents ul>li>span>img{width:100%; vertical-align:top;}
+.business02_contents ul>li>em{margin-top:8px; font-size:17px; font-weight:bold; text-align:center; color:#111111;}
+.business02_contents02>div{margin-top:25px;}
+.business02_contents02 h6{font-size:19px; color:#159fa3; padding-left:10px; position:relative;}
+.business02_contents02 h6:before{content:''; width:3px; height:3px; display:block; background-color:#159fa3; position:absolute; left:0; top:14px;
+		border-radius:10px;}
+.business02_contents02>div>p{font-size:16px; margin-top:0;}
+.business02_contents02>div>ul{margin-top:15px;}
+.video_box{text-align: center; width: 800px; margin: 0 auto;}
+.video_box video{width: 100%;}
+
+/*business03_wrap 동물실험(효능&독성)*/
+.business03_wrap>div+div{margin-top:60px;}
+.business03_contents>div+div{margin-top:30px;}
+.business03_contents>div>span{float:left; width:48%; display:block; transition: All 0.3s ease; position:relative;}
+.business03_contents>div>span+span{margin-left:4%;}
+.business03_contents>div>span:after{content: ""; position: absolute;  right: 5px; left: auto; top: auto; bottom:15px;
+		box-shadow:3px 12px 8px rgba(0,0,0,0.4); transform: rotate(3deg); z-index:-1; width: 50%; height: 20%; }
+.business03_contents>div>span>img{display:block;  width:100%; vertical-align:top;}
+.business03_contents h5{font-size:21px; color:#000000; padding-left:30px; background:url("../images/sub/bg_h5.png")no-repeat 0 center;
+		background-size:24px auto;}
+.business03_contents p{font-size:17px; margin-top:10px;}
+.business03_contents p b{font-size:19px; color:#111111;}
+.business03_contents table{margin-top:15px; font-size:15px; width:100%; border-collapse:collapse; border-spacing:0;}
+.business03_contents table caption{font-size:0;} 
+.business03_contents table th{text-align:center; padding:10px 5px;  border:1px solid #dddddd; color:#333333; width:25%;
+		    background-color:#f5f5f5;}
+.business03_contents table td{border:1px solid #dddddd; padding:10px 20px; width:75%;}
+.mou{text-align: center;}
+
+/*business04_wrap 자료보관*/
+.business04_container{background:url("../images/sub/bg_company_introduce.png")no-repeat center center; background-size:cover;}
+.business04_wrap span{display:block; margin:0 auto; max-width:70%; position:relative;}
+.business04_wrap span>img{display:block;  vertical-align:top; width:100%;  z-index:2;}
+.business04_wrap span:after{content: ""; position: absolute;  right: 5px; left: auto; top: auto; bottom:15px;
+		box-shadow:5px 20px 10px rgba(0,0,0,0.4); transform: rotate(3deg); z-index:-1; width: 50%; height: 20%; }
+.business04_wrap p{font-size:18px; margin-top:50px; text-align:center; font-weight:bold;}
+
+/*online_estimation_wrap  온라인견적의뢰*/
+/*common*/
+.online_estimation_wrap>h5{font-size:18px; text-align:center; width:190px; padding:7px 0; margin:0 auto; border:1px solid #333333; color:#000000;}
+.online_estimation_wrap>h6{font-size:17px; color:#222222; margin:40px 0 25px;}
+.online_estimation_wrap strong{font-size:16px;}
+.online_estimation_wrap table{width:100%; border-collapse:collapse; border-spacing:0;}
+.online_estimation_wrap fieldset{border:none;}
+.online_estimation_wrap legend{font-size:0;}
+.online_form>div+div{margin-top:30px;}
+.online_estimation_table{margin-top:15px; font-size:15px; }
+.online_estimation_table caption{font-size:0;} 
+.online_estimation_table th{text-align:center; padding:10px 5px;  border:1px solid #dddddd; color:#333333; background-color:#f8f8f8;}
+.online_estimation_table td{  border:1px solid #dddddd; padding:10px 20px; }
+.online_estimation_table ul{font-size:0;}
+.online_estimation_table ul>li{ font-size:15px; padding:3px; display:inline-block; vertical-align:top;}
+.online_estimation_wrap .input_style{font-family:NanumGothic,'나눔고딕',NanumBarunGothic,'나눔바른고딕','돋움',dotum, sans-serif;
+		font-size:15px; border:none; background-color:#f0f3f8; padding:5px;}
+.pro_qna{cursor: pointer !important;}
+
+/* 팝업효과 css */
+.pop_up{position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    z-index: 1000;
+}
+.pop_up.is-visible{    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.pop_box {
+	width: 60%;
+	margin: 20rem auto;
+  }
+  .form_box {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form_box input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+  }
+  .form_box button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4CAF50;
+	width: 100%;
+	border: 0;
+	padding: 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+  }
+  .form_box button:hover,.form_box button:active,.form_box button:focus {
+	background: #43A047;
+  }
+ 
+/*의뢰자정보*/
+.online_estimation_table01 .division02{width:15%;}
+/* .online_estimation_table01 .contents_form02{width:35%;} */
+.online_estimation_table01 .input_style01{width:100%;}
+/*서비스 정보*/
+.online_estimation_table02 li{ width:50%; }
+.online_estimation_table02 .input_style02{width:30%;}
+.online_estimation_table02 .input_style08{width:50%;}
+.online_estimation_table02 .division03{width:15%;}
+/*시험유형 및 세부시험법*/
+.online_estimation_table03 .test_type{width:10%; text-align:center;}
+.online_estimation_table03 .details_test01{width:25%; text-align:center;}
+.online_estimation_table03 .details_test03{width:65%;} 
+.online_estimation_table03 li{width:100%; display:block; }
+.online_estimation_table03 .input_style03{width:16%;}
+.online_estimation_table03 .input_style04{width:50%;}
+.online_estimation_table03 .input_style09{width:50%;}
+.online_estimation_table03 .input_style10{width:50%;}
+.online_estimation_table03 .details_list>li{width:33%;}
+.online_estimation_table03 .details_test04{width:70%;}
+.online_estimation_table03 .details_test05{width:30%; text-align:right;}
+/*4. 의뢰항목 및 수량*/
+.online_estimation_table04 .article{width:35%;}
+.online_estimation_table04 .article_num{width:15%;}
+.online_estimation_table04 td.article_num{ text-align:right; }
+.online_estimation_table04 .input_style05{width:60%}
+.online_estimation_table04 .input_style06{width:55%}
+/*5. 면역 염색 정보*/
+.online_estimation_table05 .input_style07{width:100%}
+/*6. 기타사항*/
+.etc_contents p{color:#255aa7; font-size:12px; }
+.etc_contents textarea{width:98%; font-size:15px; border:1px solid #dddddd; padding:8px 10px; height:120px;
+		overflow-y:auto; font-family:NanumGothic,'나눔고딕'; vertical-align:top; margin-top:20px;}
+.etc_contents .file_add{margin-top:20px; padding:8px 10px;  font-family:NanumGothic,'나눔고딕'; font-weight:bold;
+		width:400px;}
+/*등록버튼*/
+.btn_wrap01{text-align:center;} 
+.btn_wrap01 button{font-size:17px; padding:10px 50px;  font-weight:bold; }
+.btn_wrap01 .btn_confirm{ background-color:#255aa7; color:#ffffff; border:1px solid #1b509e;}
+.btn_wrap01 .btn_retract{ background-color:#838384; color:#ffffff; border:1px solid #777777;}
+
+/*confirm_progress02.asp 진행과정확인02*/
+/* .confirm_progress02_container{background:url("../images/sub/bg_company_introduce.png")no-repeat center center; background-size:cover;}
+.confirm_progress02_title h5{font-size:21px; color:#255aa7; padding-left:30px; background:url("../images/sub/bg_h5.png")no-repeat 0 center;
+		background-size:24px auto;}
+.confirm_progress02_title>div{margin-top:25px;}
+.confirm_progress02_title p{font-size:17px; font-weight:bold;}
+.confirm_progress02_title ul{ font-size:0; margin-top:10px;}
+.confirm_progress02_title ul li{display:inline-block; width:18.8%; background-color:#666666; color:#ffffff; border:1px solid #555555;
+		font-size:16px; font-weight:bold; padding:6px 5px; text-align:center;}
+.confirm_progress02_title ul li+li{margin-left:1.5%;}
+.confirm_progress02_title ul li span{display:block;}
+.confirm_progress02_title ul li:nth-child(1){background-color:#cccccc; color:#333333; border:1px solid #bbbbbb;}
+.confirm_progress02_title ul li:nth-child(2){background-color:#838384; color:#ffffff; border:1px solid #777777;}
+.confirm_progress02_title ul li:nth-child(4){background-color:#255aa7; color:#ffffff; border:1px solid #184c98;}
+.confirm_progress02_title ul li:nth-child(5){background-color:#159fa3; color:#ffffff; border:1px solid #10979b;}
+.confirm_progress02_tab02 ul li:nth-child(2){background-color:#53bad4; color:#ffffff; border:1px solid #3fb1ce;}
+.confirm_progress02_tab02 ul li:nth-child(3){background-color:#68b530; color:#ffffff; border:1px solid #5da925;}
+.confirm_progress02_contents{margin-top:50px;}
+.confirm_progress02_contents table{width:100%; border-collapse:collapse; border-spacing:0; }
+.confirm_progress02_contents caption{font-size:0;} 
+.confirm_progress02_contents th{text-align:center; padding:10px 5px;  border:1px solid #dddddd; color:#222222;
+		text-align:center; background-color:#e8eff8; font-size:15px;}
+.confirm_progress02_contents td{border:1px solid #dddddd; padding:8px 5px; text-align:center; background-color:#ffffff; font-size:14px;}
+.confirm_progress02_contents button{font-size:13px; padding:6px 5px; font-weight:bold;}
+.btn_no{background-color:#cccccc; color:#333333; border:1px solid #bbbbbb;  width:50px; }
+.btn_yes{background-color:#9bc83d; color:#ffffff; border:1px solid #8fbc31; width:50px; }
+.keeping_data>span{font-weight:bold; display:inline-block;  margin-left:15px; }
+.expiration_date{color:#255aa7; }
+.btn_progress{width:85%;}
+.btn_progress01{background-color:#cccccc; color:#333333; border:1px solid #bbbbbb}
+.btn_progress02{background-color:#838384; color:#ffffff; border:1px solid #777777;}
+.btn_progress03{background-color:#666666; color:#ffffff; border:1px solid #555555;}
+.btn_progress04{background-color:#255aa7; color:#ffffff; border:1px solid #184c98;}
+.btn_progress05{background-color:#159fa3; color:#ffffff; border:1px solid #10979b;}
+.btn_progress06{background-color:#53bad4; color:#ffffff; border:1px solid #3fb1ce;}
+.btn_progress07{background-color:#68b530; color:#ffffff; border:1px solid #5da925;} */
+/*다운로드파일*/
+/* .d_file{width:30px; height:28px;  display:inline-block; position:relative; cursor:pointer;}
+.d_file:before{content:''; width:0; height:0; display:block; border:solid transparent; border-width:10px 5px 0 5px; border-top-color:#333333; 
+		position:absolute; top:12px; left:10px}
+.d_file:after{content:''; height:10px; width:2px; display:block; background:#333333; position:absolute; top:3px; left:14px;}
+.d_file>span:before{content:''; height:10px; width:26px; display:block; border:2px #333333 solid; border-top-width:0; 
+		position:absolute; bottom:0px; left:0px; }
+.acceptance_day{ width:14%;}
+.acceptance_num{ width:14%;}
+.due_date{ width:14%; color:#cf0000; font-weight:bold;}
+.keeping_data{ width:30%;}
+.down_file{ width:9%;}
+.progress{width:18%;} */
+
+/* notice 공지사항 */
+.notice_top{background-color: #eee;}
+
+/* 제품문의 */
+.que_tit{margin: 0 5px 0 0; color:#184c98;}
+
+/*1320이하 */
+@media screen and (max-width:1320px){
+
+
+
+}
+
+
+/*1200이하 */
+@media screen and (max-width:1200px){
+
+
+
+/***sub_tab_bar 가로 서브메뉴 선택 탭-common***/
+.sub_tab_bar{display:block;}
+/*horizontal_menu_bar 가로 서브메뉴 1201px이상*/
+.horizontal_menu_bar{ display:none;}
+
+/*company_introduce_wrap회사소개*/
+.company_introduce_wrap>span{max-width:85%;}
+.company_introduce_wrap>div{ max-width:100%; }
+
+/*business04_wrap 자료보관*/
+.business04_wrap span{max-width:85%;}
+
+/*online_estimation_wrap  온라인견적의뢰*/
+/*common*/
+.online_estimation_table td{ padding:10px 10px; }
+
+
+}
+
+
+
+
+
+/*1024이하 */
+@media screen and (max-width:1024px){
+/*common*/
+.sub_contents>h4>span {font-size:50px; margin-top:20px;}
+.sub_contents>h4>span:before{top:-20px;}
+.sub_visual01,.sub_visual02,.sub_visual03,.sub_visual04 {
+	min-height: 230px;
+}
+
+
+/*company_introduce_wrap회사소개*/
+.company_introduce_wrap>span{max-width:100%;}
+.company_introduce_wrap em{font-size:22px;}
+.company_introduce_wrap p{font-size:18px;}
+
+/*organization_chart_wrap 조직도*/
+.organization_chart01 .chart_1depth{ width:200px; padding:8px 0; font-size:20px;}
+.organization_chart01 .chart_1depth:after {height:252px;}
+.organization_chart02:after{width:40%; left:30%; }
+.organization_chart02>div{width:160px; padding:6px 0; font-size:17px;} 
+.organization_chart03>div{width:24.25%; font-size:12px; border-width:1px; padding:6px 0; letter-spacing:-1px;}
+.organization_chart03>div+div{margin-left:1%;}
+
+/*business01_wrap 임상병리(진단검사의학)팀*/
+.business01_wrap>div+div{margin-top:50px;}
+.business01_wrap h5{font-size:19px; background-size:19px auto; padding-left:25px;}
+.business01_wrap p{font-size:17px; margin-top:5px;}
+.business01_title h4{font-size:22px;} 
+.business01_contents>div>span{width:49%;}
+.business01_contents>div>span+span{margin-left:2%;}
+.business01_contents table th{font-size:16px;}
+.business01_contents table td{font-size:15px;}
+.business01_contents dt{font-size:16px;  }
+
+/*business02_wrap 조직병리팀*/
+.business02_wrap>div+div{margin-top:50px;}
+.business02_wrap h5{font-size:19px; background-size:19px auto; padding-left:25px;}
+.business02_wrap p{font-size:17px; margin-top:5px;}
+.business02_title h4{font-size:22px;}
+.business02_contents ul>li{width:32.2%;}
+.business02_contents ul>li+li{margin-left:1%;}
+.business02_contents ul>li>em{margin-top:5px; font-size:16px;}
+.business02_wrap>div.business02_contents02{margin-top:40px;}
+.business02_contents02 h6{font-size:17px;}
+.business02_contents02>div>p{font-size:15px;} 
+.business02_contents02 ul>li{margin-bottom:0;}
+
+/*business03_wrap 동물실험(효능&독성)*/
+
+
+/*business04_wrap 자료보관*/
+.business04_wrap span{max-width:100%;}
+
+/*online_estimation_wrap  온라인견적의뢰*/
+/*common*/
+.online_estimation_table{font-size:14px;}
+.online_estimation_table ul>li{font-size:14px;}
+.online_estimation_wrap .input_style{font-size:14px;}
+
+/*6. 기타사항*/
+.etc_contents p{ font-size:14px; }
+.etc_contents textarea{ font-size:14px; }
+
+/*confirm_progress.asp 진행과정확인02*/
+.confirm_progress02_title h5{font-size:19px; background-size:19px auto;}
+.confirm_progress02_title ul li{width:19.2%;}
+.confirm_progress02_title ul li+li{margin-left:1%;}
+.confirm_progress02_contents th{font-size:14px;}
+.keeping_data>span{display:block;  margin-left:0; margin-top:5px;}
+.btn_progress{width:98%;}
+.btn_progress span{display:block;} 
+.btn_yes,.btn_no{display:block; width:60%; margin:0 auto; }
+.acceptance_day{ width:17%;}
+.acceptance_num{ width:17%;}
+.due_date{ width:17%;}
+.keeping_data{ width:20%;}
+.down_file{ width:9%;}
+.progress{width:20%;}
+
+ /***서브 비주얼***/
+ .sub_visual_txt{font-size:16px;}
+ .sub_visual_txt strong{font-size:32px;}
+
+ /* 하이퍼큐브_오시는길 */
+ .sub_contents>h4{padding: 10px 0 35px;}
+ .map_txt{font-size: 16px;}
+.map_txt table th{font-size: 14px;}
+.map_txt table td{font-size: 14px;}
+
+}
+
+
+/*768이하 */
+@media screen and (max-width:768px){
+/*common*/
+.sub_container{font-size:14px; padding:0 0 60px; min-height:400px;}
+/* .sub_contents{padding-top:30px;} */
+.sub_contents>h4{font-size:24px;}
+.sub_contents>h4>span{font-size:35px;}
+.sub_contents>h4>span:before{height:25px;} 
+/* .contents_wrap{margin-top:25px;} */
+
+/***서브 비주얼***/
+.sub_visual_txt{font-size:14px;}
+.sub_visual_txt strong{font-size:28px;}
+.sub_visual_txt{font-size:18px;}
+.sub_visual_txt strong{font-size:24px;}
+
+
+/***sub_tab_bar 가로 서브메뉴 선택 탭-common 1200px이하***/
+.sub_tab_01{ display:none;}
+.sub_tab_bar>div>div.sub_tab_02{width:50%; border-left-color:transparent;}
+.sub_tab_03{width:50%;}
+
+/*경로표시 공통 breadcrumb*/
+.breadcrumb{display:none;}
+
+/*company_introduce_wrap회사소개*/
+.company_introduce_wrap>div{margin:40px auto 0;}
+.company_introduce_wrap em{font-size:18px;}
+.company_introduce_wrap p{margin-top:20px; font-size:15px; letter-spacing:-1px;}
+
+
+/*organization_chart_wrap 조직도*/
+.organization_chart01{padding-top:10px;}
+.organization_chart01 .chart_1depth{ width:180px; padding:6px 0; font-size:14px;}
+.organization_chart01 .chart_1depth:after {height:200px;}
+.organization_chart02 { margin-top:70px;}
+.organization_chart02>div{width:90px; padding:5px 0; font-size:12px; margin: 0;} 
+.organization_chart02>div+div{margin-left:9%;}
+.organization_chart03{margin-top:90px; display: block;}
+.organization_chart03:before{display:none;}
+.organization_chart03>div{width:100%; margin:5px auto;} 
+.organization_chart03>div:before{display:none;}
+.organization_chart03>div+div{margin-left:0;}
+
+/*business01_wrap 임상병리(진단검사의학)팀*/
+.business01_wrap>div+div{margin-top:40px;}
+.business01_wrap h5{font-size:17px; background-size:16px auto; padding-left:22px;} 
+.business01_wrap p{font-size:15px; margin-top:2px;}
+.business01_title h4{font-size:19px;} 
+.business01_contents table th{font-size:15px; padding:8px 5px;}
+.business01_contents table td{font-size:14px; padding:5px 5px;}
+.business01_contents dt{font-size:15px;}
+.product_img{display: block;}
+.product_img div{width: 100%; text-align: center;}
+
+/*business02_wrap 조직병리팀*/
+.business02_wrap>div+div{margin-top:40px;}
+.business02_wrap h5{font-size:17px; background-size:16px auto; padding-left:22px;}
+.business02_wrap p{font-size:15px; margin-top:2px;}
+.business02_title h4{font-size:19px;} 
+.business02_contents ul>li>em{font-size:15px;}
+.business02_wrap>div.business02_contents02{margin-top:30px;}
+.business02_contents02 h6{font-size:16px;}
+.business02_contents02>div>p{font-size:14px;} 
+
+/*business04_wrap 자료보관*/
+.business04_wrap p{font-size:17px; margin-top:40px;}
+
+/*online_estimation_wrap  온라인견적의뢰*/
+/*common*/
+.online_estimation_table td{ padding:5px; }
+.online_estimation_table{margin-top:10px; }
+/*의뢰자정보*/
+.online_estimation_table01 .division02{width:20%;}
+.online_estimation_table01 .contents_form02{width:30%;}
+/*서비스 정보*/
+.online_estimation_table02 li{ width:100%; }
+.online_estimation_table02 .division03{width:20%;}
+/*시험유형 및 세부시험법*/
+.online_estimation_table03 .details_list>li{width:50%;}
+/*4. 의뢰항목 및 수량*/
+.online_estimation_table04 .article{width:33%;}
+.online_estimation_table04 .article_num{width:18%;}
+
+/*confirm_progress.asp 진행과정확인02*/
+.confirm_progress02_title h5{font-size:17px; background-size:16px auto; padding-left:22px;}
+.confirm_progress02_title p{font-size:15px;}
+.confirm_progress02_contents{margin-top:40px;}
+.confirm_progress02_title ul li{width:100%; font-size:15px;}
+.confirm_progress02_title ul li+li{margin-left:0; margin-top:5px;}
+.confirm_progress02_title ul li span{display:inline-block;}
+.confirm_progress02_contents th,.confirm_progress02_contents td{font-size:13px; letter-spacing:-1px;}
+.confirm_progress02_contents button{font-size:12px;}
+
+.btn_wrap01 .btn_confirm,.btn_wrap01 .btn_retract{padding: 6px; width: 90px; font-size: 12px;}
+
+/* 하이퍼큐브_오시는길 */
+.sub_contents>h4{padding: 40px 0 35px; font-size: 20px;}
+.map_txt{font-size: 14px;}
+.map_txt table th{font-size: 12px; padding: 0;}
+.map_txt table td{font-size: 12px;}
+
+}
+
+
+/*600이하 */
+@media screen and (max-width:600px){
+/*common*/
+/* .sub_contents{padding-top:20px;} */
+/* .sub_contents>h4{font-size:21px; letter-spacing:-1px;} */
+/* .contents_wrap{margin-top:15px;} */
+.sub_contents>h4>span{font-size:27px;}
+.sub_contents>h4>span:before{height:20px; top:-15px;} 
+
+/***sub_tab_bar 가로 서브메뉴 선택 탭-common 1200px이하***/
+.sub_tab_bar h4,.sub_tab_bar h3{font-size:14px;}
+/*sub_tab_2depth 메뉴*/
+.sub_tab_2depth{top:37px;}
+
+/*company_introduce_wrap회사소개*/
+.company_introduce_wrap em{font-size:17px;}
+.company_introduce_wrap p{font-size:14px;}
+
+/*business01_wrap 임상병리(진단검사의학)팀*/
+.business01_wrap h5{font-size:16px; background-size:14px auto; padding-left:18px;} 
+.business01_title h4{font-size:18px;} 
+.business01_contents>div>span{float:none; width:100%;}
+.business01_contents>div>span+span{margin-left:0; margin-top:20px;}
+.business01_contents table{margin-top:30px;}
+.business01_contents table td{font-size:13px; letter-spacing:-1px;}
+
+/*business02_wrap 조직병리팀*/
+.business02_wrap h5{font-size:16px; background-size:14px auto; padding-left:18px;}
+.business02_title h4{font-size:18px;}
+.business02_contents ul>li{float:none;  width:100%; margin-bottom:15px;}
+.business02_contents ul>li+li{margin-left:0;}
+.business02_contents ul>li>em{font-size:14px;}
+.business02_contents02>div{margin-top:20px;}
+
+/*business04_wrap 자료보관*/
+.business04_wrap p{font-size:15px; margin-top:40px;}
+
+/*online_estimation_wrap  온라인견적의뢰*/
+/*서비스 정보*/
+.online_estimation_table02 .input_style02 { width:80%;}
+/*시험유형 및 세부시험법*/
+.online_estimation_table03 .details_list>li{width:100%;}
+/*4. 의뢰항목 및 수량*/
+.online_estimation_table04 .article{width:28%;}
+.online_estimation_table04 .article_num{width:22%;}
+.etc_contents .file_add{width:98%;}
+
+/*confirm_progress.asp 진행과정확인02*/
+.confirm_progress02_title ul li{font-size:14px;}
+.confirm_progress02_contents th{padding:8px 5px;}
+.confirm_progress02_contents td{padding:6px 5px;}
+
+/* .sub_visual01 {
+    background-image: url(../images/sub/sub_banner_02_1024.png);
+	min-height: 150px;
+} */
+/* .sub_visual06 {
+    background-image: url(../images/sub/sub_banner_02_1024.png);
+	min-height: 150px;
+} */
+
+
+}
+
+
+
+/*420이하 */
+@media screen and (max-width:420px){
+/*common*/
+
+
+/***서브 비주얼***/
+.sub_visual_txt{font-size:17px;}
+.sub_visual_txt p{margin-top:0px;}
+
+/*organization_chart_wrap 조직도*/
+.organization_chart02 { margin-top:50px;}
+.organization_chart01 .chart_1depth:after {height:180px;}
+.organization_chart03{margin-top:70px;}
+.organization_chart03>div{font-size:14px;}
+.organization_chart03>div+div{margin-left:0; margin-top:15px;}
+
+
+/*online_estimation_wrap  온라인견적의뢰*/
+/*시험유형 및 세부시험법*/
+.online_estimation_table03 .test_type{width:21%; }
+.online_estimation_table03 .details_test01{width:24%;}
+.online_estimation_table03 .details_test03{width:55%;}
+
+/*4. 의뢰항목 및 수량*/
+.online_estimation_table04 .input_style05{width:100%}
+.online_estimation_table04 .input_style06{width:50%}
+
+/*confirm_progress02.asp 진행과정확인02*/
+.confirm_progress02_contents td{font-size:12px;}
+
+.pw_sch{display: none !important;}
+
+/* 하이퍼큐브_오시는길 */
+.sub_contents>h4{padding: 35px 0 30px; font-size: 18px;}
+.map_txt{font-size: 14px;}
+.map_txt table th{font-size: 12px; padding: 3px 10px;}
+.map_txt table td{font-size: 12px;}
+
+}

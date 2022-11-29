@@ -1,0 +1,405 @@
+@charset "utf-8";
+@import url('font.css'); /* 사이트 세부설정, 공통 클래스 설정, 기타 설정 */
+/*all_contents - member 전체 공통*/
+/*.all_contents{box-sizing:border-box;padding:0 5px;}
+.all_contents>h4{font-size:18px; color:#0079bc; border-bottom:1px solid #0079bc;
+		padding-bottom:5px; margin-top:20px;}*/
+
+/*로그인 상자 공통*/
+.login_box{border:1px solid #dddddd; border-radius:3px; margin-top:30px; width:100%; box-sizing:border-box; }
+.input_box{padding:25px 30px;}
+.input_box>div{float:left; box-sizing:border-box; }
+.input_box>div:first-child{width:60%; background:url("../images/member/icon_login.png")no-repeat 0 center;}
+.input_box>div+div{width:40%; border-left:1px solid #dddddd;}
+.id_pw_box{margin-left:10.5%; width:84%; margin-top:16px; position:relative;}
+
+.input_line+div{margin-top:12px;}
+.input_line>*{float:left; }
+.input_line>strong{font-size:15px; color:#333333; width:75px; padding:3px 0 3px 10px; box-sizing:border-box;
+		background:url("../images/member/circle_b.png")no-repeat 0 center;}
+.input_line>.input_gray{width:48%; padding:9px; border-radius:2px; border:1px solid #cccccc; box-sizing:border-box;
+		font-size:12px; color:#444444;}
+.login_btn{position:absolute; right:0; top:0;}
+
+.join_box>a{display:block; width:85%; margin:0 auto;}
+.join_box>a>*{display:block;}
+.join_box>a>strong{font-weight:800; font-size:20px; color:#000000;  line-height:1.5;}
+.join_box>a>em{color:#444444; font-weight:bold; line-height:1.5;}
+.join_box>a>i{font-size:12px;line-height:1.5;}
+.join_box>a>span{display:inline-block; padding:3px 15px; border-radius:2px; border:1px solid #999999; font-size:13px;
+		font-weight:bold; color:#333333; text-align:center; margin-top:6px;}
+.join_box>a:hover>span{border:1px solid #e80000; color:#e80000;}
+
+
+.forget{ padding:8px 10px 8px 30px; background-color:#777777;}
+.forget>strong{color:#ffffff; background:url("../images/member/circle_w.png")no-repeat 0 center;
+		padding-left:10px; font-size:14px;}
+.forget>a{display:inline-block; padding:3px 15px; border-radius:2px; font-weight:bold; color:#ffffff;  
+		border:1px solid #ffffff;margin-left:50px; text-align:center;}
+.forget>a:hover{background-color:#0b50a2; border-color:#0b50a2;}
+
+/*회원가입 공통*/
+.clause>h5{margin-top:20px; font-size:15px; color:#111111;}
+.clause>p{margin-top:3px;  padding-left:15px;}
+.clause>strong{ color:#333333; display:block; padding-left:12px; background:url("../images/member/icon_square.jpg")no-repeat 0 center; 
+		margin-top:20px; font-size:14px;}
+
+/*회원가입 1단계 약관동의버튼*/
+.join01 table{width:100%; border-collapse: collapse; border-spacing:0;} 
+.agreement_no{margin-top:30px}
+.agreement{ display:inline-block; padding:8px; text-align:center; width:145px;
+		background-color:#333333; border:1px solid #333333; font-weight:bold; color:#ffffff;}
+.agreement_no>.no{display:inline-block; padding:8px; text-align:center; width:145px; margin-left:3px; font-weight:bold;
+		border:1px solid #333333;}
+
+/*회원가입 2단계 입력양식*/
+.join02 table{width:100%; border-collapse: collapse; border-spacing:0;} 
+.input_format { padding-top:10px; }
+.input_format>div{padding:14px 0; border-bottom:1px solid #dddddd;}
+.input_format>div:first-child{border-top:2px solid #999999;}
+
+.input_format >div>*{float:left; box-sizing:border-box;}
+.input_format strong{color:#333333; padding:4px 5px 3px 15px; width:20%; background:url("../images/member/circle_b.png")no-repeat 3px center;}
+.input_format strong+div{width:80%;}
+.input_format select{background-color:#ffffff;}
+.input_format .input_gray{width:20%; padding:6px 8px; border-radius:2px; border:1px solid #cccccc;}
+.input_format .input_gray02{width:90%;}
+.input_format .input_gray03{width:16.4%;}
+.input_format .input_gray04{width:46.62%;}
+.input_format p{position:relative; }
+.input_format p+p{margin-top:8px;}
+/*.input_format p>span{position:absolute; left:23px; top:2px; line-height:1.0;}뉴스레터 메일 서비스*/
+.input_format_btn{display:inline-block; padding:3px 10px 4px; background-color:#333333; color:#ffffff; font-size:12px;
+		border-radius:2px; border:1px solid #222222; margin-left:5px; vertical-align: top;}
+
+/*회원가입 2단계 확인 취소 버튼*/
+.confirm_retract{margin-top:30px}
+.confirm{ display:inline-block; padding:8px; text-align:center; width:145px; 
+		background-color:#0b50a2; border:1px solid #0b50a2; font-weight:bold; color:#ffffff;}
+.retract{display:inline-block; padding:8px; text-align:center; width:145px;  margin-left:3px; font-weight:bold;
+		border:1px solid #666666;}
+
+/*회원가입 3단계 가입완료*/
+.join_finish{margin-top:30px;}
+.join_finish>p{font-size:28px; font-weight:800; color:#dd0000; text-align:center; padding-top:50px;
+		background:url("../images/member/icon_approval.png")no-repeat center 0;}
+.join_finish>div{border:1px solid #dddddd; border-radius:3px; margin-top:20px;}
+.join_finish>div>div{float:left; padding:30px 38px; width:50%; box-sizing:border-box;}
+.join_finish>div>div:first-child{padding-left:82px; border-right:1px solid #dddddd;  
+		background:url("../images/member/icon_join_com.png")no-repeat 35px center;}
+.join_finish>div>div+div{ background-color:#ffffff; text-align:center;}
+.join_finish em{font-size:15px; color:#333333; display:block; font-weight:bold;}
+.join_finish em>i{font-size:18px; color:#0b50a2;}
+.page_migration{display:inline-block; padding:7px 10px; width:55%; text-align:center; border:1px solid #999999; font-size:15px; 
+		color:#333333; font-weight:bold; border-radius:3px; margin:0 auto; background-color:#fafafa;}
+.page_migration:hover{background-color:#0b50a2; color:#ffffff;}
+
+
+/*아이디 비밀번호 찾기*/
+.id_pw_sch_box{padding:25px 30px; margin-top:30px; border:1px solid #dddddd; width:100%; box-sizing:border-box; border-radius:3px;}
+.input_box02{width:60%; float:left; border-right:1px solid #dddddd; box-sizing:border-box;
+		 background:url("../images/member/icon_login.png")no-repeat 0 80px;}
+.join_box02{width:40%; float:left;}
+
+.input_box02>p>strong{font-size:15px; color:#000000;}
+.input_box02>p>strong>i{color:#0b50a2;}
+.input_box02>p>span{font-size:12px;}
+
+.id_pw_sch{margin-left:10%; width:86%; margin-top:16px; position:relative;}
+.input_line02+div{margin-top:12px;}
+.input_line02>*{float:left; }
+.input_line02>strong{font-size:15px; color:#333333; width:23%; padding:3px 0 3px 10px; box-sizing:border-box;
+		background:url("../images/member/circle_b.png")no-repeat 0 center;}
+.input_line02>.input_gray{width:48%; padding:9px; border-radius:2px; border:1px solid #cccccc; box-sizing:border-box;
+		font-size:12px; color:#444444;}
+.id_pw_sch_box .confirm_btn{position:absolute; right:0; top:0;}
+
+.join_box02>a{display:block; width:85%; margin:0 auto;}
+.join_box02>a>*{display:block;}
+.join_box02>a>strong{font-weight:800; font-size:20px; color:#000000;}
+.join_box02>a>em{color:#444444; font-weight:bold; margin-top:5px;}
+.join_box02>a>i{font-size:12px;}
+.join_box02>a>span{display:inline-block; padding:3px 15px; border-radius:2px; border:1px solid #999999; font-size:13px;
+		font-weight:bold; color:#333333; text-align:center; margin-top:30px;}
+.join_box02>a:hover>span{border:1px solid #e80000; color:#e80000;}
+
+/*modify.asp  개인정보수정*/
+.modify_table{width:100%;}
+.modify_table .clause>h5{margin-top:20px; font-size:15px; color:#111111;}
+.modify_table .clause>p{margin-top:3px;  padding-left:15px;}
+.modify_table .clause>strong{ color:#333333; display:block; padding-left:12px; background:url("../images/member/icon_square.jpg")no-repeat 0 center; 
+		margin-top:20px; font-size:14px;}
+.modify_input01_line{border-top:2px solid #999999; border-bottom:1px solid #dddddd; padding:14px 0;}
+.modify_input_line{border-bottom:1px solid #dddddd; padding:14px 0;}
+.modify_clause{width:20%;}
+.modify_clause strong{color:#333333; padding:4px 5px 3px 15px; width:100%; display:block; box-sizing:border-box;
+		background:url("../images/member/circle_b.png")no-repeat 3px center;}
+.modify_table .input_gray{padding:6px 8px; border-radius:2px; border:1px solid #cccccc; box-sizing:border-box;}
+.modify_table .input_gray01{width:20%;}
+.modify_table .input_gray02{width:90%;}
+.modify_table .input_gray04{width:16%;}
+.modify_table .btn_post{display:inline-block; padding:3px 10px 4px; background-color:#333333; color:#ffffff; font-size:12px;
+		border-radius:2px; border:1px solid #222222; margin-left:5px; vertical-align: top; letter-spacing:-1px;}
+.modify_table .confirm{ display:inline-block; padding:8px; text-align:center; width:145px; 
+		background-color:#0b50a2; border:1px solid #0b50a2; font-weight:bold; color:#ffffff;}
+.modify_table .retract{display:inline-block; padding:8px; text-align:center; width:145px;  margin-left:3px; font-weight:bold;
+		border:1px solid #666666;}
+
+/* 회원탈퇴 */
+.login_box.center{text-align: center; padding: 20px;}
+.out_btn{margin: 20px; text-align: center;}
+
+/*기존 게시판 리스트*/
+table.pw_table{font-size:14px;}
+table.pw_page{font-size:14px;}
+table.pw_view {font-size:14px;}
+/*table.pw_view strong{font-weight:normal; color:#444444}*//*20190308-추가 -게시판 자세히 보기 strong 스타일*/
+/*table .pw_th strong{font-weight:normal; color:#444444;}*//*20190308-추가 -게시판 th 스타일*/
+
+td.pw_num{width:10%;}
+td.pw_title{width:45%;}
+td.pw_name{width:20%;}
+td.pw_day{width:10%;}
+td.pw_sch{width:15%;}
+td.pro_qna{width: 45%;}
+
+td.pw_title{position:relative;}
+td.pw_title a{width:80%; display:inline-block; overflow: hidden; text-overflow:ellipsis; white-space: nowrap;padding:5px 5px 0; }
+td.pw_title img{position:absolute;left:85%; top:50%; margin-top:-5px;}
+/*기존 게시판 전체 페이지 조회수*/
+td.pw_sch_num span{display:inline-block;}
+
+/*기존 게시판 검색 기능*/
+.pw_sch_function td{padding-left:5px; padding-top:10px;}
+
+/*기존 갤러리 자세히 보기view*/
+.pw_contents div img{display:block; width:100%; vertical-align:top;}
+
+/*기존 갤러리06-중고장터*/
+.pw_marketplace .pw_img>a{display:block;}
+.pw_marketplace .pw_img>a>img{display:block; width:100%;}
+
+/*기존 게시판 갤러리 리스트 제목 길이 설정 추가 2018-03-28 추가*/
+.view_wrap{width:95%;}
+.view_wrap .white a{display:block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width:95%;
+		font-size:12px; text-align:center; margin:0 auto;}
+/*기존 게시판 갤러리 리스트 이미지*/
+.list_gallery{width:25%; height:auto;}
+
+
+/* 1320이상 */
+@media screen and (min-width:1320px) {
+
+}
+
+
+/*1319이하 */
+@media screen and (max-width:1319px){
+
+
+}
+
+
+/*1024이하 */
+@media screen and (max-width:1024px){
+
+/*로그인 상자 공통*/
+.input_box{padding:20px;}
+.id_pw_box{margin-left:9%;}
+.input_line>.input_gray{width:45%;}
+.join_box>a>i{letter-spacing:-1px;}
+.forget{ padding:8px 20px;}
+
+/*회원가입 3단계 가입완료*/
+.join_finish>div>div{padding:30px 35px;}
+.join_finish>div>div:first-child{padding-left:72px; background-position:30px center;}
+
+/*아이디 비밀번호 찾기*/
+.id_pw_sch_box{padding:20px;}
+.id_pw_sch{margin-left:9%;}
+.input_line02>.input_gray{width:45%;}
+.join_box02>a>i{letter-spacing:-1px;}
+
+
+
+}
+
+/*768이하 */
+@media screen and (max-width:768px){
+
+/*로그인 상자 공통*/
+.input_box{padding:20px 0;}
+.input_box>div:first-child{width:100%; padding-top:60px; background-position:center 0;}
+.input_box>div+div{width:100%; margin:20px auto 0; padding-top:20px; border-left:none; border-top:1px solid #dddddd;}
+.id_pw_box{width:90%; margin:0 auto; }
+
+.input_line>strong{font-size:13px; width:20%;} 
+
+.join_box>a{text-align:center; width:90%;}
+.join_box>a>*{text-align:center;}
+.join_box>a>strong{font-size:18px;}
+
+.forget{padding:8px 10px;}
+.forget>strong{font-size:13px;}
+.forget>a{ margin-left:10px; padding:3px 10px;}
+
+/*회원가입 2단계 입력양식*/
+.input_format>div{padding:10px 0; font-size:12px;}
+.input_format strong{padding:4px 5px 3px 10px; width:25%;}
+.input_format strong+div{width:75%;}
+.input_format .input_gray{font-size:12px;}
+.input_format select.input_gray{width:35%;}
+div.adress_txt>p>span{display:block;}
+
+/*회원가입 3단계 가입완료*/
+.join_finish>p{font-size:24px;}
+.join_finish>div>div{float:none; padding:20px 25px; width:100%;}
+.join_finish>div>div:first-child{padding:70px 25px 20px; border-right:none; border-bottom:1px solid #dddddd; 
+		background-position:center 20px; text-align:center;}
+.join_finish em{font-size:13px;}
+.join_finish em>i{font-size:15px;}
+.page_migration{width:45%; font-size:13px;}
+
+/*아이디 비밀번호 찾기*/
+.id_pw_sch_box{padding:20px 0;}
+.input_box02{width:100%; padding-top:60px; background-position:center 0; border-right:none;}
+.join_box02{width:100%; margin:20px auto 0; padding-top:20px; border-top:1px solid #dddddd;}
+.input_box02>p{text-align:center;}
+.input_box02>p>strong{font-size:14px;}
+.input_line02>strong{font-size:13px;}
+.input_line02>.input_gray{width:42%;}
+
+.id_pw_sch{margin:10px auto 0; }
+.join_box02>a{text-align:center;}
+.join_box02>a>strong{font-size:18px;}
+.join_box02>a>span{margin-top:20px;}
+
+/*modify.asp  개인정보수정*/
+.modify_input01_line{ padding:10px 0;}
+.modify_input_line{ padding:10px 0;}
+.modify_clause{width:25%;}
+.modify_clause strong{ padding:4px 5px 3px 10px; background-position:3px center;}
+.modify_table .input_gray{font-size:12px;}
+.modify_table .input_gray01{width:24%;}
+.modify_table .input_gray04{width:20%;}
+.modify_table  select.input_gray01{width:30%;}
+.modify_table .confirm,.modify_table .retract{padding:6px; width:90px; font-size:12px;}
+
+
+
+/*기존 게시판 리스트 */
+table.pw_table{font-size:13px;}
+table.pw_page{font-size:13px;}
+
+td.pw_day{display:none;}
+
+/*기존 게시판 검색 기능*/
+.pw_sch_function td select{font-size:13px;}
+.pw_sch_function td input{font-size:13px;}
+
+/*기존 게시판 글쓰기 기능*/
+table.pw_writing{font-size:13px;}
+table.pw_writing td{font-size:13px;}
+
+/*기존 게시판 자세히 보기 기능*/
+table.pw_view{font-size:13px;}
+table.pw_view td{font-size:13px;}
+
+/*기존 게시판 갤러리 리스트 이미지*/
+.list_gallery_table{font-size:0;}
+.list_gallery_table td{font-size:13px;}
+.list_gallery{width:50%; display:inline-block; vertical-align:top;}
+
+.agreement,.agreement_no>.no{padding: 6px; width: 90px; font-size: 12px;}
+
+}
+
+/*420이하 */
+@media screen and (max-width:420px){
+
+/*로그인 상자 공통*/
+.id_pw_box{padding-bottom:90px;}
+.input_line>strong{font-size:12px; width:35%;} 
+.input_line>.input_gray{width:64%;}
+.login_btn{top:100%; margin-top:-78px; left:50%; margin-left:-54px;}
+
+.join_box>a>strong{font-size:16px;}
+.join_box>a>i{font-size:11px;}
+
+.forget>strong{font-size:12px; display:block;}
+.forget>a{ margin-top:5px; font-size:12px;}
+
+/*회원가입 공통*/
+.clause>h5{font-size:13px;}
+.clause>p{font-size:12px;}
+.clause>strong{font-size:13px;}
+
+/*회원가입1단계*/
+.checkbox_txt{font-size:12px;}
+.agreement_no{margin-top:20px}
+.agreement{padding:6px; width:90px; font-size:12px;}
+.agreement_no>.no{padding:6px; width:90px; font-size:12px; margin-left:1px;}
+
+/*회원가입 2단계 입력양식*/
+.input_format>div{padding:8px 0;}
+.input_format >div>*{float:none;}
+.input_format strong{padding:0 0 0 15px; width:10%;}
+.input_format strong+div{width:100%; padding:5px 0 0 15px;}
+.input_format .input_gray{padding:4px 6px; width:38%;}
+.input_format .input_gray02{width:85%;}
+.input_format .input_gray03{width:19%;}
+.input_format .input_gray04{width:46.62%;}
+.input_format .input_gray05{width:18%;}
+.input_format .input_gray06{width:19%;}
+a.input_format_btn{padding:2px 8px;  font-size:11px;}
+button.input_format_btn{padding:4px 8px;  font-size:11px;}
+
+/*회원가입 2단계 확인 취소 버튼*/
+.confirm_retract{margin-top:20px}
+.confirm{padding:6px; width:90px; font-size:12px;}
+.retract{padding:6px; width:90px; font-size:12px; margin-left:1px;}
+
+/*회원가입 3단계 가입완료*/
+.join_finish>div>div{padding:15px;}
+.join_finish>div>div:first-child{padding:70px 15px 15px;}
+.join_finish em{font-size:12px;}
+.join_finish span{font-size:12px;}
+.page_migration{width:60%; font-size:12px;}
+
+/*아이디 비밀번호 찾기*/
+.id_pw_sch{padding-bottom:90px;}
+
+.input_box02>p{width:95%; margin:0 auto;}
+.input_box02>p>strong{font-size:13px;}
+.input_box02>p>span{font-size:11px;}
+.input_line02>strong{font-size:12px; width:35%;}
+.input_line02>.input_gray{width:64%;}
+
+.id_pw_sch_box .confirm_btn{left:50%; margin-left:-54px; top:100%; margin-top:-78px;}
+
+.join_box02>a>strong{font-size:16px;}
+.join_box02>a>span{margin-top:10px;}
+.join_box02>a>i{font-size:11px;}
+
+/*modify.asp  개인정보수정*/
+.modify_table .clause>h5{font-size:13px;}
+.modify_table .clause>p{font-size:12px;}
+.modify_table .clause>strong{font-size:13px; }
+.modify_clause{width:25%;}
+.modify_clause strong{font-size:12px; letter-spacing:-1px;}
+.modify_table .input_gray{padding:4px 6px;}
+.modify_table .input_gray01{width:28%;}
+.modify_table .input_gray02{width:95%;}
+.modify_table .input_gray04{width:26%;}
+.modify_table  select.input_gray01{width:32%; font-size:11px;}
+.modify_table .btn_post{padding:2px 8px; font-size:11px;}
+.modify_table .confirm{padding:6px; width:90px; font-size:12px;}
+.modify_table .retract{padding:6px; width:90px; font-size:12px; margin-left:5px;}
+
+
+/*기존 게시판 리스트 */
+td.pw_day{display:none;}
+td.pw_title{width:69%;}
+td.pw_name{width:20%;}
+td.pw_title>a{width:60%;}
+}
