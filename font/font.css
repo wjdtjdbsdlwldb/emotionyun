@@ -89,3 +89,116 @@
 .SpoqaHanSansNeo-Thin {
     font-family: 'SpoqaHanSansNeo-Thin';
 }
+
+/* 2023-05-08 스위트 폰트 */
+@font-face {
+    font-family: 'SUITE-Bold';
+    src: url('/portfolio/font/SUITE-Bold.ttf') format('truetype');
+}
+
+.SUITE-Bold {
+    font-family: 'SUITE-Bold';
+}
+
+@font-face {
+    font-family: 'SUITE-ExtraBold';
+    src: url('/portfolio/font/SUITE-ExtraBold.ttf') format('truetype');
+}
+
+.SUITE-ExtraBold {
+    font-family: 'SUITE-ExtraBold';
+}
+
+@font-face {
+    font-family: 'SUITE-Heavy';
+    src: url('/portfolio/font/SUITE-Heavy.ttf') format('truetype');
+}
+
+.SUITE-Heavy {
+    font-family: 'SUITE-Heavy';
+}
+
+@font-face {
+    font-family: 'SUITE-Light';
+    src: url('/portfolio/font/SUITE-Light.ttf') format('truetype');
+}
+
+.SUITE-Light {
+    font-family: 'SUITE-Light';
+}
+
+
+@font-face {
+    font-family: 'SUITE-Medium';
+    src: url('/portfolio/font/SUITE-Medium.ttf') format('truetype');
+}
+
+.SUITE-Medium {
+    font-family: 'SUITE-Medium';
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('/portfolio/font/SUITE-Regular.ttf') format('truetype');
+}
+
+.SUITE-Regular {
+    font-family: 'SUITE-Regular';
+}
+
+@font-face {
+    font-family: 'SUITE-SemiBold';
+    src: url('/portfolio/font/SUITE-SemiBold.ttf') format('truetype');
+}
+
+.SUITESemiBold {
+    font-family: 'SUITE-SemiBold';
+}
+
+
+/* 2023-05-08 나눔스퀘어 네오 */
+@font-face {
+    font-family: 'NanumSquareNeo-aLt';
+    src: url('/portfolio/font/NanumSquareNeo-aLt.ttf') format('truetype');
+}
+
+.NanumSquareNeo-aLt {
+    font-family: 'NanumSquareNeo-aLt';
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-bRg';
+    src: url('/portfolio/font/NanumSquareNeo-bRg.ttf') format('truetype');
+}
+
+.NanumSquareNeo-bRg {
+    font-family: 'NanumSquareNeo-bRg';
+}
+
+
+@font-face {
+    font-family: 'NanumSquareNeo-cBd';
+    src: url('/portfolio/font/NanumSquareNeo-cBd.ttf') format('truetype');
+}
+
+.NanumSquareNeo-cBd {
+    font-family: 'NanumSquareNeo-cBd';
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-dEb';
+    src: url('/portfolio/font/NanumSquareNeo-dEb.ttf') format('truetype');
+}
+
+.NanumSquareNeo-dEb {
+    font-family: 'NanumSquareNeo-dEb';
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-eHv';
+    src: url('/portfolio/font/NanumSquareNeo-eHv.ttf') format('truetype');
+}
+
+.NanumSquareNeo-eHv {
+    font-family: 'SUITE-SemiBold';
+}
