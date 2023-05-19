@@ -636,12 +636,12 @@ body::-webkit-scrollbar-button {
 .container_main {display: grid; place-items: center;height: 100vh;width: 100%;position: relative; background-color: #cbd0e1;}
 .container_main img {height: 100%; width: auto; max-width: 75vw; object-fit: contain;}
 .container_main h2 {font-family: 'Quentin'; color: #fff; font-size: clamp(3rem, 10vw, 6rem);position: absolute;top: 27%;left: 5%;width: 90%;height: 50%;z-index: 99;display: grid;place-items: center;}
-body:not(.no-js) .container_main .image-wrap {transition: .8s ease-out;transition-delay: 0.2s;position: relative;width: auto;height: 85vh;overflow: hidden;clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);visibility: hidden;}
-body:not(.no-js) .container_main .image-wrap img {transform: scale(1.3);transition: 1.5s ease-out;}
+body:not(.no-js) .container_main .image-wrap {transition: 1s ease-out;transition-delay: 0.2s;position: relative;width: auto;height: 85vh;overflow: hidden;clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);visibility: hidden;}
+body:not(.no-js) .container_main .image-wrap img {transform: scale(1.3);transition: 1.8s ease-out;}
 body:not(.no-js) .container_main .animating .image-wrap {clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);visibility: visible;transform: skewY(0);}
 body:not(.no-js) .container_main .animating img {transform: scale(1);transition: 3s ease-out;}
 body:not(.no-js) .container_main .fadeup {opacity: 0;transition: 0.4s ease-out;transform: translateY(40px);}
-body:not(.no-js) .container_main .fading-up {opacity: 1;transition: .9s ease-out;transform: translateY(0px); transition-delay: 0.7s;}
+body:not(.no-js) .container_main .fading-up {opacity: 1;transition: 1s ease-out;transform: translateY(0px); transition-delay: 0.7s;}
 
 /* 메인 제외 page 공통 - 타이틀 font-size */
 .main_tit{font-size: clamp(1.56rem,8vw,2.5rem); line-height: 1.7; font-weight: 900; letter-spacing: 1px; -webkit-text-stroke: 2px #162146; text-stroke: 2px #162146;}
@@ -676,7 +676,7 @@ body:not(.no-js) .container_main .fading-up {opacity: 1;transition: .9s ease-out
 .projects ul li a img{height: 100%; object-fit: cover; }
 
 /* index.html -  footer */
-.ft_for_font {font-family: 'Tangerine'; font-weight: 700;}
+.ft_for_font {font-family: 'Tangerine'; font-weight: 700; font-size: clamp(2.18rem,8vw,3.125rem); line-height: 1.7; margin-right: 8px;margin-left: 16px;}
 
 
 
