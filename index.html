@@ -1,572 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="title" content="" />
+    <meta name="title" content="" />
+    <meta name="robots" content="" /> 
     <title>SY Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font/font.css"> 
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="font/font.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- owl 캐러셀 불러오기 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://use.typekit.net/yap0qpj.css">
-    <!-- 폰트어썸 불러오기 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://use.typekit.net/skn8ash.css'>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="index.js"></script>
 </head>
 
 <body>
-    <main class="main con-min-width">
-        <div class="main-wrap con-min-width">
-            <section class="page-1 con">
-                <div class="pg1-wrap flex">
-                    <div class="top-line line1"></div>
-                    <div class="left-txt">
-                        <p class="name1">Jung Seo Yun</br>Portfolio</p>
-                        <p class="mul-des">Designer <span>&</span></br>Publisher</p>
-                        <p class="intro">끊임없이 변화하는 퍼블리셔 정서윤입니다.</p>
-                        <span class="character1 cht">Challenging</span>
-                        <span class="cn-bar"></span>
-                        <span class="character2 cht">Developing</span></br>
-                        <span class="character3 cht">Responsible</span>
-                        <span class="cn-bar"></span>
-                        <span class="character4 cht">Positive</span>
-                        <span class="block charater5 cht">Communication</span>
-                    </div>
-                    <div class="center-img">
-                        <div class="wave">
-                            <svg class="labSVG" xmlns="http://www.w3.org/2000/svg" viewBox="150 200 280 280">
-                                <defs>
-                                    <linearGradient id="frontGrad" gradientUnits="userSpaceOnUse" x1="300" y1="100"
-                                        x2="300" y2="600">
-                                        <stop offset="0.5" style="stop-color:rgb(72, 99, 255)" />
-                                        <stop offset="0.8" style="stop-color:rgb(255, 190, 190)" />
-                                    </linearGradient>
-                                    <mask id="liquidMask">
-                                        <path class="liquidMask" fill="#FFFFFF"
-                                            d="M337,273.9V129h-74v144.8c-37,14.7-63.1,50.8-63.1,93c0,55.2,44.8,100,100,100s100-44.8,100-100C400,324.7,373.9,288.6,337,273.9z" />
-                                    </mask>
-                                    <clipPath id="sphereMask">
-                                        <circle fill="red" stroke="none" stroke-width="0.4957" stroke-miterlimit="10"
-                                            cx="300" cy="367" r="100" />
-                                    </clipPath>
-                                    <filter id="goo" color-interpolation-filters="sRGB">
-                                        <feGaussianBlur in="SourceGraphic" stdDeviation="7 7" result="blur" />
-                                        <feColorMatrix in="blur" mode="matrix"
-                                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -7" result="cm" />
-
-                                        <feComposite in="SourceGraphic" in2="cm" />
-                                    </filter>
-                                </defs>
-                                <g class="liquidMaskGroup" clip-path="url(#sphereMask)">
-                                    <path class="liquidBack" fill="none"
-                                        d="M1199.9,365.1c-41.8,0-79.4,9.8-107.4,8.1c-38.9-2.3-54.5-16.4-83.6-19.9
-                                              c-29.1-3.5-71.5,3.4-110.4,1c-28-1.7-56.4-13.7-98.2-13.7c-41.8,0-70.2,12-98.2,13.7c-38.9,2.3-81.4-4.6-110.4-1
-                                              c-29.1,3.5-44.7,17.5-83.6,19.9c-28,1.7-65.7-8.2-107.5-8.2c-41.8,0-79.5,9.9-107.5,8.2c-38.9-2.3-54.5-16.3-83.6-19.9
-                                              c-29.1-3.5-72,3.4-110.9,1c-28-1.7-56.7-13.7-98.7-13.7V438h1200L1199.9,365.1z" />
-                                    <g class="liquidBubblesGroup" fill="url(#frontGrad)" clip-path="url(#sphereMask)">
-                                        <path class="liquidFront" fill="url(#frontGrad)"
-                                            d="M1199.9,329.6c-44,0-70.6,29.4-96.4,33c-36.1,5.1-70.7-14.5-106.8-9.4	c-25.8,3.7-52.4,33.3-96.4,33.3c-44,0-70.7-29.7-96.4-33.4c-36.1-5.1-70.7,14.4-106.8,9.2c-25.8-3.7-52.4-33.3-96.5-33.3	c-44,0-70.7,29.7-96.5,33.3c-36.1,5.1-70.7-14.4-106.8-9.3c-25.8,3.7-52.4,33.3-96.5,33.3c-44,0-70.7-29.7-96.5-33.3	c-36.1-5.1-71.2,14.4-107.3,9.3c-25.8-3.7-52-33.3-97-33.3V533h1200L1199.9,329.6z" />
-                                        <circle class="bubble0" cx="350" cy="400" r="8" />
-                                        <circle class="bubble1" cx="320" cy="400" r="6" />
-                                        <circle class="bubble2" cx="300" cy="400" r="12" />
-                                        <circle class="bubble3" cx="276" cy="400" r="3" />
-                                        <circle class="bubble4" cx="244" cy="400" r="4" />
-                                        <circle class="bubblePop0" cx="280" cy="400" r="5" />
-                                        <circle class="bubblePop1" cx="310" cy="390" r="5" />
-                                        <circle class="bubblePop2" cx="350" cy="410" r="5" />
-                                    </g>
-
-                                    <path class="pop" fill="none" stroke="none" stroke-width="4" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-miterlimit="10"
-                                        d="M37.4,9c2.1-2.1,4.2-4.2,6.3-6.3 M2,44.4c2.2-2.2,4.5-4.5,6.7-6.7 M37.4,37.4c2.1,2.1,4.2,4.2,6.3,6.3 M2,2c2.2,2.2,4.5,4.5,6.7,6.7" />
-                                </g>
-
-                                <radialGradient id="shine" cx="280" cy="337" r="100" gradientUnits="userSpaceOnUse">
-
-                                    <stop offset="0.02" style="stop-color:#fff;stop-opacity:0.2" />
-
-                                    <stop offset="1" style="stop-color:#487fff;stop-opacity:0.1" />
-                                </radialGradient>
-
-                                <circle opacity="0.9" fill="url(#shine)" stroke="none" stroke-width="0.4957"
-                                    stroke-miterlimit="10" cx="300" cy="367" r="100" />
-
-                            </svg>
-                        </div>
-                        <div class="circle-box">
-                            <div class="cir"></div>
-                        </div>
-                    </div>
-                    <div class="shadow">
-                        <div class="sha-cir"></div>
-                    </div>
-                    <div class="bt-txt">
-                        <p class="port sy">SY Portfolio</p>
-                        <p class="ui sy">work</p>
-                    </div>
-                    <div class="bottom-line line1"></div>
-                    <div class="right-txt">
-                        <p class="uni">UNI-</p>
-                        <p class="side-mu side1">Multiplex</p>
-                        <p class="side-ux side1">UX / UI Designer</p>
-                        <p class="side-na side1">Publisher</p>
-                        <p class="wise">The best way </br>
-                            to predict the future is </br>
-                            to create it.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="page-2">
-                <div class="pg2-wrap">
-                    <div class="slide-box con">
-                        <div class="sd-line"></div>
-                        <div class="carousel-1">
-                            <div class="owl-carousel owl-theme">
-
-                                <div class="item">
-                                    <div class="des-name">
-                                        <h3 style="letter-spacing: -3.8px;">01</h3>
-                                        <p class="sd-name">
-                                            Dashboard<br>
-                                            반응형 디자인
-                                        </p>
-
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Design</span>
-                                    </div>
-                                    <span class="tool tool0">Program : Figma / Adobe illustrator</span>
-                                    <p class="tool tool0">size : 1920w</p>
-                                    <p class="work-infor">
-                                        전체적인 톤은 모노톤으로 사용하여 깔끔하고 심플하게 디자인 하였고
-                                        내용에 컬러플한 색상을 포인트로 사용하여 정보가 더욱 부곽 될 수 있도록
-                                        하였습니다.
-                                    </p>
-                                </div>
-
-                                <div class="item">
-                                    <div class="des-name">
-                                        <h3 style="letter-spacing: -3.8px;">02</h3>
-                                        <p class="sd-name">국립</br>
-                                            현대미술관</br>
-                                            리디자인
-                                        </p>
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Redesign</span>
-                                    </div>
-                                    <span class="tool">Program : Adobe Photoshop / illustrator</span>
-                                    <p class="tool">size : 1920w</p>
-                                    <p class="work-infor">
-                                        기존 홈페이지의 단조로운 디자인을 탈피하고자 다양한 레이아웃을
-                                        사용하였습니다. 또한 더욱 효과적인 정보전달을 위하여 전체적으로
-                                        모노톤을 사용하였고 미술관의 시그니처 컬러를 포인트 색상으로
-                                        사용하여 정보가 더욱 부곽 될 수 있도록 디자인하였습니다.
-                                    </p>
-                                </div>
-
-                                <div class="item">
-                                    <div class="des-name">
-                                        <h3>03</h3>
-                                        <p class="sd-name">이니스프리</p>
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Redesign</span>
-                                    </div>
-                                    <span class="tool tool2">Program : Adobe Photoshop / illustrator</span>
-                                    <p class="tool tool2">size : 1920w</p>
-                                    <p class="work-infor work-infor2" style="margin-top:48px">
-                                        브랜드의 아이덴티티를 느낄 수 있는 이미지를 사용하고 다양한 레이아웃으로
-                                        제품을 더욱 부곽시키고 시각적 즐거움을 키웠습니다. 색상은 제품을 돋보이고자
-                                        모노톤으로 사용하였고 포인트 컬러로 이니스프리 고유의 색을 톤다운 하여
-                                        차분하고 모던한 느낌을 더했습니다.
-                                    </p>
-                                </div>
-                                <!-- 학원 모작들 숨김  -->
-                                <!-- <div class="item">
-                                    <div class="des-name">
-                                        <h3>04</h3>
-                                        <p class="sd-name">SUBWAY</p>
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Emulate</span>
-                                    </div>
-                                    <span class="tool tool3">Program : Adobe Photoshop / illustrator</span>
-                                    <p class="tool tool3">size : 1920w</p>
-                                    <p class="work-infor work-infor3">
-                                        코딩 연습을 위하여 서브웨이를 모작하였습니다.
-                                    </p>
-                                </div>
-
-                                <div class="item">
-                                    <div class="des-name">
-                                        <h3>05</h3>
-                                        <p class="sd-name">HANA TI</p>
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Emulate</span>
-                                    </div>
-                                    <span class="tool tool3">Program : Adobe Photoshop / illustrator</span>
-                                    <p class="tool tool3">size : 1920w</p>
-                                    <p class="work-infor work-infor3">
-                                        코딩 연습을 위하여 하나금융TI를 모작하였습니다.
-                                    </p>
-                                </div>
-
-                                <div class="item">
-                                    <div class="des-name">
-                                        <h3>06</h3>
-                                        <p class="sd-name">S.I.KOREA::</p>
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Emulate</span>
-                                    </div>
-                                    <span class="tool tool3">Program : Adobe Photoshop / illustrator</span>
-                                    <p class="tool tool3">size : 1920w</p>
-                                    <p class="work-infor work-infor3">
-                                        코딩 연습을 위하여 신세계인터네셔날을 모작하였습니다.
-                                    </p>
-                                </div>
-
-                                <div class="item">
-                                    <div class="des-name">
-                                        <h3>07</h3>
-                                        <p class="sd-name">GOYANG</br> ARTS</br> CENTER</p>
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Emulate</span>
-                                    </div>
-                                    <span class="tool">Program : Adobe Photoshop / illustrator</span>
-                                    <p class="tool">size : 1920w</p>
-                                    <p class="work-infor work-infor3">
-                                        코딩 연습을 위하여 고양문화재단을 모작하였습니다.
-                                    </p>
-                                </div>
-
-                                <div class="item">
-                                    <div class="des-name">
-                                        <h3>08</h3>
-                                        <p class="sd-name">PEARL</br> ABYSS</p>
-                                        <span class="type-bar"></span>
-                                        <span class="des-type">Emulate</span>
-                                    </div>
-                                    <span class="tool tool4">Program : Adobe Photoshop / illustrator</span>
-                                    <p class="tool tool4">size : 1920w</p>
-                                    <p class="work-infor work-infor4" style="margin-top:42px;">
-                                        코딩 연습을 위하여 펄어비스를 모작하였습니다.
-                                    </p>
-                                </div> -->
-                            </div>
-                        </div>
-
-                        <!-- 목업박스 슬라이드 -->
-                        <div class="carousel-2" data-carousel-1-autoplay-status="Y">
-                            <div class="owl-carousel owl-theme">
-
-                                <div onclick="Carousel2__itemClicked(this);" class="item active"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/dasdboard.png?dummy12312"
-                                            alt="대시보드">
-                                        <div class="mockup-txt" style="margin-left:145px;">
-                                            <p>Work</p>
-                                            <p>Dashboard 반응형 디자인</p>
-                                            <p>Participation in work</p>
-                                            <p>기획 100% / 디자인 100% / 코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn">
-                                            <a href="/pf/dashboard/index.html" target="_blank"
-                                                class="des-btn">Publishing</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div onclick="Carousel2__itemClicked(this);" class="item"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/hd.png?dummy123123"
-                                            alt="현대목업">
-                                        <div class="mockup-txt" style="margin-left:145px;">
-                                            <p>Work</p>
-                                            <p>현대국립박물관 웹사이트 디자인</p>
-                                            <p>Participation in work</p>
-                                            <p>기획 100% / 디자인 100% / 코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn">
-                                            <a href="/pf/hd/index.html" target="_blank" class="des-btn">Publishing</a>
-                                            <a href="/pf/hd_process/index.html" target="_blank"
-                                                class="pro-btn">Process</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div onclick="Carousel2__itemClicked(this);" class="item"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/inn2.png?dummy1231234"
-                                            alt="이니목업" style="width:640px; padding-top:50px;">
-                                        <div class="mockup-txt" style="margin-top:10px;">
-                                            <p>Work</p>
-                                            <p>이니스프리 웹사이트 디자인</p>
-                                            <p>Participation in work</p>
-                                            <p>기획 100% / 디자인 100% / 코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn" style="margin-left:100px;">
-                                            <a href="/pf/inn/index.html" target="_blank" class="des-btn">Publishing</a>
-                                            <a href="/pf/inn_process/index.html" target="_blank"
-                                                class="pro-btn">Process</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 학원 모작들 숨김 -->
-                                <!-- <div onclick="Carousel2__itemClicked(this);" class="item"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/sb.png?dummy123123"
-                                            alt="서브웨이목업" style="width:720px;">
-                                        <div class="mockup-txt" style="margin-left:145px;">
-                                            <p>Work</p>
-                                            <p>서브웨이 모작연습</p>
-                                            <p>Participation in work</p>
-                                            <p>코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn">
-                                            <a href="/pf/subway/index.html" target="_blank" class="des-btn">Desgin</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div onclick="Carousel2__itemClicked(this);" class="item"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/hana.png?dummy123123"
-                                            alt="하나금융목업" style="width:650px; padding-top:40px;">
-                                        <div class="mockup-txt" style="margin-top:10px;">
-                                            <p>Work</p>
-                                            <p>하나금융 모작연습</p>
-                                            <p>Participation in work</p>
-                                            <p>코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn" style="margin-left:100px;">
-                                            <a href="/pf/hana/index.html" target="_blank" class="des-btn">Desgin</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div onclick="Carousel2__itemClicked(this);" class="item"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/si.png?dummy123123"
-                                            alt="신세계목업" style="width:720px;">
-                                        <div class="mockup-txt" style="margin-left:145px;">
-                                            <p>Work</p>
-                                            <p>신세계 인터네셔날 모작연습</p>
-                                            <p>Participation in work</p>
-                                            <p>코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn">
-                                            <a href="/pf/si/index.html" target="_blank" class="des-btn">Desgin</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div onclick="Carousel2__itemClicked(this);" class="item"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/gy.png?dummy123123"
-                                            alt="고양아람누리목업" style="width:650px; padding-top:40px;">
-                                        <div class="mockup-txt" style="margin-top:10px;">
-                                            <p>Work</p>
-                                            <p>고양아람누리 모작연습</p>
-                                            <p>Participation in work</p>
-                                            <p>코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn" style="margin-left:100px;">
-                                            <a href="/pf/gy/index.html" target="_blank" class="des-btn">Desgin</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div onclick="Carousel2__itemClicked(this);" class="item"
-                                    style="background-color:#f0f0f0;">
-                                    <div class="mockup">
-                                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/pa.png?dummy123123"
-                                            alt="펄어비스목업" style="width:720px;">
-                                        <div class="mockup-txt" style="margin-left:145px;">
-                                            <p>Work</p>
-                                            <p>펄어비스 모작연습</p>
-                                            <p>Participation in work</p>
-                                            <p>코딩 100%</p>
-                                        </div>
-                                        <div class="mk-btn">
-                                            <a href="/pf/pa/index.html" target="_blank" class="des-btn">Desgin</a>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 221119 작업물 추가 페이지 -->
-            <section class="page-4 con-min-width">
-                <div class="pg4-wrap">
-                    <div class="work">
-                        <div class="work_tit">
-                            <h2>Work</h2>
-                            <p>회사 프로젝트 작업물</p>
-                        </div>
-                        <div class="work_body">
-                            <ul>
-                                <li>
-                                    <a href="https://hypercube.games/" target="_blank" class="site_txt">
-                                        <span class="s01">closed site</span>
-                                        <span class="s02">hYPERCUBE</span>
-                                        <span class="s03">game development company</span>
-                                        <span class="s04">참여도 : 80% <br> 새소식리스트 & 상세페이지,게임소식,회사소개 페이지 <br> 디자인 & 반응형 퍼블리싱 작업 </span>
-                                    </a>
-                                    <a href="https://hypercube.games/" target="_blank" class="site_image"> <img
-                                            src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/hyper.png?dummy1231234"
-                                            alt="">
-                                        <span>2022. <br>PROJECT </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/pf/jd project/image-search1-1.html" target="_blank" class="site_txt">
-                                        <span class="s01">open site</span>
-                                        <span class="s02">JUNGDRI</span>
-                                        <span class="s03">shipping agencies company</span>
-                                        <span class="s04">오픈 사이트 : https://jungdari.com <br>기존에 구축된 사이트에 추가적으로 <br>이미지 검색 페이지 반응형 퍼블리싱 작업</span>
-                                    </a>
-                                    <a href="/pf/jd project/image-search1-1.html" target="_blank" class="site_image"> <img
-                                            src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/jd.png?dummy1231234"
-                                            alt="">
-                                        <span>2022. <br>PROJECT </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank" class="site_txt">
-                                        <span class="s01">site not open</span>
-                                        <span class="s02">WEB & APP</span>
-                                        <span class="s03">game information site</span>
-                                        <span class="s04">참여도 : 85% <br> 웹/앱 사이트 동시진행 프로젝트 <br> 웹/앱의 전반적인 디자인&퍼블리싱 작업 </span>
-                                    </a>
-                                    <a href="#" class="site_image"> <img
-                                            src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/sm.png?dummy1231234"
-                                            alt="">
-                                        <span>2021 ~ 22. <br>PROJECT</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="page-3 con-min-width">
-                <div class="pg3-wrap">
-                    <div class="about">
-                        <div class="ab-left">
-                            <div class="ab-title">
-                                <h3 class="about-me">About me</h3>
-                                <div class="ab-bar"></div>
-                            </div>
-                            <p class="say-box active-on-visible" data-active-on-visible-diff-y="-300">
-                                ‘어떠한 미래를 만들어 나갈것인가' 는</br>
-                                본인에게 달렸다고 생각합니다.</br>
-                                디자인 또한 그렇습니다.
-                            </p>
-                            <div class="photo-me active-on-visible" data-active-on-visible-diff-y="300">
-                                <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/photo.png"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="ab-txt active-on-visible" data-active-on-visible-diff-y="200">
-                            <ul class="cht-box flex">
-                                <li class="text-align-center">
-                                    <p>01</p>
-                                    <p>책임감있는</p>
-                                </li>
-                                <li>
-                                    <span class="inline-block">
-                                        주어진 일을 수행함에 있어 잘 마무리 할수 있도록 끝까지 책임지고</br>성실히 임합니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <ul class="cht-box flex">
-                                <li class="text-align-center">
-                                    <p>02</p>
-                                    <p>노력하는</p>
-                                </li>
-                                <li>
-                                    <span class="inline-block">
-                                        새로움과 배움에 대한 호기심과 욕심을 버리지 않고 도전하며 </br>어제보다 오늘, 오늘보다 내일, 매일 더 나아질 수 있도록 노력합니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <ul class="cht-box flex">
-                                <li class="text-align-center">
-                                    <p>03</p>
-                                    <p>긍정적인</p>
-                                </li>
-                                <li>
-                                    <span class="inline-block">
-                                        모든 사물과 사람을 긍정적으로 바라보려 노력하며 새로운 생각을</br>끈임없이 시도합니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <ul class="cht-box flex">
-                                <li class="text-align-center">
-                                    <p>04</p>
-                                    <p>커뮤니케이션</p>
-                                </li>
-                                <li>
-                                    <span class="inline-block">
-                                        공감과 경청을 통한 원활한 커뮤니케이션으로 다양한 사람들과</br>소통하는것을 좋아합니다.
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="skill-box  active-on-visible" data-active-on-visible-diff-y="200">
-                            <h3>Skill</h3>
-                            <div class="skill-icon">
-                                <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/ai.png?dummy123123"
-                                    alt="" style="width:70px;">
-                                <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/ph.png?dummy123123"
-                                    alt="" style="width:70px;">
-                                <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/html.png?dummy123123"
-                                    alt="" style="width:35px; margin-left:10px;">
-                                <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/css.png?dummy123123"
-                                    alt="" style="width:35px; margin-left:10px;">
-                                <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/jq.png?dummy123123"
-                                    alt="" style="margin-left:10px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <footer class="footer">
-                <div class="ft-wrap text-align-center">
-                    <div class="ft-box">
-                        <h3 class="h3">Epilogue</h3>
-                        <p class="under-bar">
-                            <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/img1/blog/article/pf2/line.png?dummy123123"
-                                alt="">
-                        </p>
-                        <p>If you can dream, you can make it happen.</p>
-                        <p>긍정적인 시선으로 즐거운 미래를 꿈꾸고 실현시키는 디자이너가 되겠습니다.</p>
-
-                    </div>
-                    <div class="copy">Copyright © 2020 by J. Seo Yun All Rights Reserved</div>
-                </div>
-            </footer>
-        </div>
-    </main>
+   <section class="section section_01">
+      <div class='container_main'>
+         <h2 class="fadeup">JSY Portfolio Work</h2>
+         <div class='reveal'>
+           <div class="image-wrap">
+             <img src='https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/main_.png?dummy123123' alt="메인 사진">
+           </div>
+         </div>
+       </div> 
+   </section>
+   <section class="section section_02 py7rem">
+      <div class="container t-center">
+         <div class="about_wrap">
+            <div class="tit_text">
+               <h5 class="sub_tit c-gray">Introduction</h5>
+               <h1 class="main_tit c-navy">ABOUT ME</h1>
+               <p class="sub_tit2 lh15 keep-all">‘어떠한 미래를 만들어 나갈 것인가?' 는 본인에게 달렸다고 생각합니다. 퍼블리싱 또한 그렇습니다.</p>
+            </div>
+            <nav class="advantage_box py5rem">
+               <ul>
+                  <li>
+                     <h5 class="body_tit lh20 semibold">01 책임감있는</h5>
+                     <p class="lh12">주어진 일을 수행하는 데 잘 마무리할 수 있도록 끝까지 책임지고 성실히 임합니다.</p>
+                  </li>
+                  <li>
+                     <h5 class="body_tit lh20 semibold">02 노력하는</h5>
+                     <p class="lh12">새로움과 배움에 대한 호기심과 욕심을 버리지 않고 도전하며 어제보다 오늘, 오늘보다 내일, 매일 더 나아질 수 있도록 노력합니다.</p>
+                  </li>
+                  <li>
+                     <h5 class="body_tit lh20 semibold">03 긍정적인</h5>
+                     <p class="lh12">모은 사물과 사람을 긍정적으로 바라보려 노력하며 새로운 생각을 끊임없이 시도합니다.</p>
+                  </li>
+                  <li>
+                     <h5 class="body_tit lh20 semibold">04 커뮤니케이션</h5>
+                     <p class="lh12">공감과 경청을 통한 원활한 커뮤니케이션으로 다양한 사람들과 소통하는 것을 좋아합니다.</p>
+                  </li>
+               </ul>
+            </nav>
+            <nav class="skill_box">
+               <ul class="flex flex-jc-sb flex-ai-start flex-row-wrap">
+                  <li>
+                     <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/ps_icon.png?dummy123123" alt="포토샵아이콘" class="image_box">
+                     <p class="bold body_1">Photoshop</p>
+                  </li>
+                  <li>
+                     <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/ai_icon.png?dummy123123" alt="일러스트 아이콘" class="image_box">
+                     <p class="bold body_1">Illustration</p>
+                  </li>
+                  <li>
+                     <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/cd_all_icon.png?dummy123123" alt="html아이콘" class="image_box">
+                     <p class="bold body_1">html</p>
+                  </li>
+                  <li>
+                     <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/cd_all_icon.png?dummy123123" alt="css아이콘" class="image_box">
+                     <p class="bold body_1">css</p>
+                  </li>
+                  <li>
+                     <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/cd_all_icon.png?dummy123123" alt="jq아이콘" class="image_box">
+                     <p class="bold body_1">JQuary</p>
+                  </li>
+                  <li>
+                     <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/figma_icon.png?dummy123123" alt="피그마아이콘" class="image_box">
+                     <p class="bold body_1">Figma</p>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+   </section>
+   <section class="section section_03 bg-c-navy py7rem">
+      <div class="container t-center">
+         <div class="work_wrap">
+            <div class="tit_text c-white">
+               <h5 class="sub_tit">Personal Work</h5>
+               <h1 class="main_tit2 work_after">W. CREATIONS</h1>
+               <p class=" sub_tit2 lh15 c-light-gray">개인 작업물</p>
+            </div>
+            <nav class="all_works py6rem">
+               <ul class="flex flex-jc-start flex-ai-start flex-row-wrap">
+                  <li class="works">
+                     <a href="/pf/dashboard/index.html" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/dashboard_work.png?dummy123123" alt="개인작업물1" class="img_box">
+                     </a>
+                     <div class="work_infor c-white py2rem">
+                        <p class="sub_tit">responsive web</p>
+                        <h5 class="main_tit3">Dashboard</h5>
+                        <p class="body_2">전체적인 색상은 모노톤으로하고 컬러풀한 색상을 포인트로 사용하여 내용이 잘 부각될 수 있도록 작업했습니다. </p>
+                        <p class="body_2 pt20">기여도 - 디자인 100% / 코딩 100%</p>
+                     </div>
+                     <div class="link_btn">
+                        <a href="/pf/dashboard/index.html" target="_blank" class="inline-block bold body_2">Publishing</a> 
+                     </div>
+                  </li>
+                  <li class="works">
+                     <a href="/pf/hd/index.html" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/hd_work.png?dummy123123" alt="개인작업물2" class="img_box">
+                     </a>
+                     <div class="work_infor c-white py2rem">
+                        <p class="sub_tit">Redesign web</p>
+                        <h5 class="main_tit3">국립 현대 미술관</h5>
+                        <p class="body_2">기존 홈페이지의 단조로운 디자인을 탈피하고자 다양한 레이아웃과 시그니쳐 컬러를 포인트로 사용하여 작업했습니다.</p>
+                        <p class="body_2 pt20">기여도 - 디자인 100% / 코딩 100%</p>
+                     </div>
+                     <div class="link_btn">
+                        <a href="/pf/hd/index.html" target="_blank" class="inline-block bold body_2">Publishing</a>
+                        <a href="/pf/hd_process/index.html" target="_blank" class="inline-block bold body_2">Process</a>
+                     </div>
+                  </li>
+                  <li class="works">
+                     <a href="/pf/inn/index.html" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/inn_work.png?dummy123123" alt="개인작업물3" class="img_box">
+                     </a>
+                     <div class="work_infor c-white py2rem">
+                        <p class="sub_tit">Redesign web</p>
+                        <h5 class="main_tit3">이니스프리</h5>
+                        <p class="body_2">기존 홈페이지에서는 이니스프리만의 아이덴티티가 느껴지지 않아, 이니스프리 고유의 느낌이 날 수 있도록 작업했습니다.</p>
+                        <p class="body_2 pt20">기여도 -디자인 100% / 코딩 100%</p>
+                     </div>
+                     <div class="link_btn">
+                        <a href="/pf/inn/index.html"  target="_blank" class="inline-block bold body_2">Publishing</a>
+                        <a href="/pf/inn_process/index.html"  target="_blank" class="inline-block bold body_2">Process</a>
+                     </div>
+                  </li>
+                  <li class="works">
+                     <a href="#empty"> 
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/comming_soon.png?dummy123123" alt="개인작업물4" class="img_box">
+                     </a>
+                 
+                  </li>
+                  <li class="works">
+                     <a href="#empty">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/comming_soon.png?dummy123123" alt="개인작업물5" class="img_box">
+                     </a>
+                    
+                  </li>
+                  <li class="works">
+                     <a href="#empty">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/comming_soon.png?dummy123123" alt="개인작업물6" class="img_box">
+                     </a>
+                     
+                  </li>
+                 
+               </ul>
+            </nav>
+            <a  href="#more" id="more" class="mt30 inline-block bold view_more">View More</a>
+         </div>
+   </section>
+   <section class="section section_04 py7rem">
+      <div class="container">
+         <div class="project_wrap">
+            <div class="tit_text">
+               <h5 class="sub_tit c-gray">Company</h5>
+               <h1 class="main_tit c-navy">PROJECT</h1> 
+            </div> 
+            <nav class="projects py5rem">
+               <ul class="flex flex-jc-start flex-ai-start flex-row-wrap">
+                  <li class="project">
+                     <a href="http://hypercube.games/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/hypercube_project.png?dummy123123" alt="프로젝트이미지1" class="img_box"> 
+                     </a>
+                     <div class="project_infor py2rem t-center">  
+                        <h5 class="main_tit3">HYPERCUBE</h5>
+                        <p class="sub_tit">2022,PROJECT / 참여도 : 80%</p> 
+                        <p class="body_2">새소식리스트 & 상세페이지,게임소식,회사소개 페이지 디자인 & 반응형 퍼블리싱 작업</p>  
+                     </div>
+                  </li>
+                  <li class="project">
+                     <a href="/pf/jd project/image-search1-1.html" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/jungdarl_project.png?dummy123123" alt="프로젝트이미지2" class="img_box">
+                     </a>
+                     <div class="project_infor py2rem t-center">  
+                        <h5 class="main_tit3">JUNGDRI</h5>
+                        <p class="sub_tit">2022,PROJECT /오픈 사이트 : https://jungdari.com </p> 
+                        <p class="body_2">기존에 구축된 사이트에 추가적으로 이미지 검색 페이지 반응형 퍼블리싱 작업</p>  
+                     </div>
+                  </li>
+                  <li class="project">
+                     <a href="#empty">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/ux_ui project.png?dummy123123" alt="프로젝트이미지3" class="img_box">
+                     </a>
+                     <div class="project_infor py2rem t-center">  
+                        <h5 class="main_tit3">WEB & APP</h5>
+                        <p class="sub_tit">2021 ~ 2022,PROJECT / 참여도 : 90% </p> 
+                        <p class="body_2">웹/앱 사이트 동시진행 프로젝트 웹/앱의 전반적인 디자인&퍼블리싱 작업</p>   
+                     </div>
+                  </li>
+                  <li class="project">
+                     <a href="#empty">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/ux_ui project2.png?dummy123123" alt="프로젝트이미지4" class="img_box">
+                     </a>
+                     <div class="project_infor py2rem t-center">  
+                        <h5 class="main_tit3">WEB & APP</h5>
+                        <p class="sub_tit">2023,PROJECT / 참여도 : 80% </p> 
+                        <p class="body_2">자사 웹/앱 사이트 동시진행 프로젝트 웹/앱의 전반적인퍼블리싱 작업</p>   
+                     </div>
+                  </li>
+                  <li class="project">
+                     <a href="#empty">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/comming_soon2.jpg?dummy123123" alt="프로젝트이미지5" class="img_box">
+                     </a>
+                  </li>
+                  <li class="project">
+                     <a href="#empty">
+                        <img src="https://cdn.jsdelivr.net/gh/wjdtjdbsdlwldb/emotionyun/images/comming_soon2.jpg?dummy123123" alt="프로젝트이미지6" class="img_box">
+                     </a>
+                  </li>
+               </ul>
+            </nav>    
+            <div class="t-center">
+               <a href="#moreTwo" id="moreTwo" class="mt30 inline-block bold view_more bg-c-navy c-white ">View More</a>
+            </div>
+         </div> 
+   </section>
+   
+   <footer class="footer py6rem bg-c-navy">
+      <div class="container t-center">
+         <div class="footer_txt body_3 c-white bold">
+            <p>THANK YOU <span class="ft_for_font inline-block">for</span> WATCHING</p>
+         </div>
+      </div>
+   </footer>
 </body>
 
 </html>

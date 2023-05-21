@@ -1,91 +1,59 @@
 
+/* 나눔스퀘어 네오 폰트 */
 @font-face {
-    font-family: 'JSDongkang-Regular';
-    src: url('/portfolio/font/JSDongkang-Regular.ttf') format('truetype');
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.JSDongkang-Regular {
-    font-family: 'JSDongkang-Regular';
-}
-
-
-@font-face {
-    font-family: 'payboocBold';
-    src: url('/portfolio/font/payboocBold.ttf') format('truetype');
-}
-
-.payboocBold {
-    font-family: 'payboocBold';
+.nsNeo-regular {
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: 600;
 }
 
 @font-face {
-    font-family: 'payboocExtraBold';
-    src: url('/portfolio/font/payboocExtraBold.ttf') format('truetype');
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.payboocExtraBold {
-    font-family: 'payboocExtraBold';
-}
-
-@font-face {
-    font-family: 'payboocLight';
-    src: url('/portfolio/font/payboocLight.ttf') format('truetype');
-}
-
-.payboocLight {
-    font-family: 'payboocLight';
+.nsNeo-bold {
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: 700;
 }
 
 @font-face {
-    font-family: 'payboocMedium';
-    src: url('/portfolio/font/payboocMedium.ttf') format('truetype');
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.payboocMedium {
-    font-family: 'payboocMedium';
-}
-
-@font-face {
-    font-family: 'SpoqaHanSansNeo-Regular';
-    src: url('/portfolio/font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
-}
-
-.SpoqaHanSansNeo-Regular {
-    font-family: 'SpoqaHanSansNeo-Regular';
+.nsNeo-extrabold {
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: 800;
 }
 
 @font-face {
-    font-family: 'SpoqaHanSansNeo-Medium';
-    src: url('/portfolio/font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.SpoqaHanSansNeo-Medium {
-    font-family: 'SpoqaHanSansNeo-Medium';
+.nsNeo-heavy {
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: 900;
 }
 
+/* 메인 영어 폰트 */
 @font-face {
-    font-family: 'SpoqaHanSansNeo-Bold';
-    src: url('/portfolio/font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+    font-family: 'Quentin';
+    src: url('/font/Quentin.otf') format('opentype');
 }
 
-.SpoqaHanSansNeo-Bold {
-    font-family: 'SpoqaHanSansNeo-Bold';
-}
-
-@font-face {
-    font-family: 'SpoqaHanSansNeo-Light';
-    src: url('/portfolio/font/SpoqaHanSansNeo-Light.ttf') format('truetype');
-}
-
-.SpoqaHanSansNeo-Light {
-    font-family: 'SpoqaHanSansNeo-Light';
-}
-
-@font-face {
-    font-family: 'SpoqaHanSansNeo-Thin';
-    src: url('/portfolio/font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
-}
-
-.SpoqaHanSansNeo-Thin {
-    font-family: 'SpoqaHanSansNeo-Thin';
+.Quentin {
+    font-family: 'Quentin'; 
 }
